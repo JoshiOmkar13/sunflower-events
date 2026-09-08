@@ -1,50 +1,111 @@
-# Sunflower Events LLP — Corporate Presentation & Web Platform
+﻿# Sunflower Events LLP — Luxury Event Management Platform
 
 > **End-to-End Event Strategy, Planning & Turnkey Execution**  
-> Led by **Sayali Sahasrabudhe** (18+ Years Business Leadership | 50+ Events Executed Since July 2023)
+> Led by **Sayali Sahasrabudhe** | 18+ Years Business Leadership | 50+ Events Executed Since July 2023
 
 ---
 
-## 🌐 Live Deployments & Repository
-- **Production URL (SSL):** [https://sunflower-events.bjttvo.easypanel.host](https://sunflower-events.bjttvo.easypanel.host)
-- **Direct VPS URL:** [http://72.62.198.241:3086](http://72.62.198.241:3086)
-- **Local Development Server:** [http://localhost:8080](http://localhost:8080) (`/index.html` and `/deck.html`)
-- **GitHub Repository:** [https://github.com/JoshiOmkar13/sunflower-events](https://github.com/JoshiOmkar13/sunflower-events)
+## Live Deployments & Repository
+
+| Target | URL |
+|:-------|:----|
+| **Production (SSL)** | https://sunflower-events.bjttvo.easypanel.host |
+| **Direct VPS** | http://72.62.198.241:3086 |
+| **Executive Deck** | https://sunflower-events.bjttvo.easypanel.host/deck.html |
+| **Local Dev** | http://localhost:8080 |
+| **GitHub** | https://github.com/JoshiOmkar13/sunflower-events |
 
 ---
 
-## 📱 Architecture & Multi-Device Features
-- **12-Slide Executive Architecture:** Exactly 12 focused slides condensing end-to-end strategic capabilities.
-- **Strict Zero-Scrollbar Guarantee:** Engineered with `100dvh`, strict container constraints, and `min-height: 0` so no slide ever renders a vertical or horizontal scrollbar on any device.
-- **Image + Diagrammatic Split-Screen:** Every slide features a high-definition photograph/visual on the left and a structured infographic diagram (process chevrons, quad cards, pillar matrices, timeline stacks) on the right.
-- **Real Celebrations Gallery:** Authentic high-resolution photo showcase extracted from live Sunflower Events ceremonies (Grand Stage Architecture, Royal Floral Mandap, Banquets Hall, Sacred Rangoli Art, Vedic Sanctity, Royal Palkhi Procession).
-- **Artisanal Heritage & Traditions:** Handcrafted ceremonial details (Custom Illustrated Antarpat, Paithani Dining Plates, Vedic Blessing Placards, Wooden Brooches, Mogra Petal Carpets).
-- **Founder Identity:** Real cropped photograph of Founder Sayali Sahasrabudhe integrated on website and presentation deck.
-- **Authentic Marathi & 'क्षण':** Culturally resonant Devanagari copy highlighting *अविस्मरणीय क्षण*, *मांगल्याचे क्षण*, and *सुवर्ण क्षण*.
-- **3-Way Bilingual Switcher:** Toggle dynamically between *Dual View (EN + मराठी)*, *English Only*, and *मराठी Only*.
-- **Embedded Media Hub:** Interactive video modal players with streaming support for verified client case studies (*Chi. Tanay 3,000 km, Chi. Advay Madhav Banquets, Chi. Aarin Vaze 23 Aug 2024*).
-- **Navigation Controls:** Keyboard shortcuts (`←`, `→`, `Space`, `O` for 12-slide grid overview, `B` for language switcher, `F` for fullscreen) and mobile touch gestures.
-- **Privacy Masked:** Contact numbers and emails masked per enterprise P0 privacy rules (with no redundant "Protected/Masked" labels).
+## Tech Stack
+
+| Layer | Technology |
+|:------|:-----------|
+| **Frontend** | Vanilla HTML5, CSS3, JavaScript (no framework dependencies) |
+| **Design System** | Bottle Green (#1B4332) + Sunflower Gold (#D4A017), Inter font |
+| **Local Server** | Node.js (HTTP range-streaming for MP4 videos) |
+| **Container** | NGINX Alpine (Docker) |
+| **Orchestration** | Docker Swarm (single node) |
+| **Reverse Proxy & TLS** | Traefik + Let''s Encrypt |
+| **Hosting** | Hostinger Cloud VPS (72.62.198.241) via Easypanel |
 
 ---
 
-## 📂 Repository Structure
-```text
-├── clients-docs/             # Source brand photos & case study videos
-├── docs/
-│   └── presentation-strategy-and-deck.md  # Master strategic narrative & copy
-├── presentation/
-│   ├── assets/               # Production media assets (videos, photos, cropped founder portrait)
-│   ├── index.html            # Luxury responsive corporate website
-│   ├── deck.html             # 12-slide zero-scrollbar executive presentation deck
-│   ├── website.css           # Website design system (bottle green & sunflower gold)
-│   ├── presentation.css      # Presentation styling with strict zero-scrollbar rules
-│   ├── presentation.js       # Presentation engine, gestures, modals & counters
-│   └── Dockerfile            # High-performance NGINX Alpine container definition
-├── scripts/
-│   ├── serve-local.js        # Lightweight Node static server with MP4 range streaming
-│   ├── serve-local.ps1       # Local server one-click launcher
-│   └── deploy-hostinger.ps1  # Automated remote Hostinger VPS deployment pipeline
-├── CLIENT_REQUIREMENTS_REGISTER.md
-└── README.md
+## Key Features
+
+- **Luxury Responsive Website** — Full bottle green & sunflower gold design system, mobile-first
+- **12-Slide Executive Deck** — Zero-scrollbar guarantee, keyboard/touch navigation, bilingual EN/मराठी
+- **Authentic Gallery** — 12 high-resolution real ceremony photos from Odoo portfolio (1920px masters)
+- **Real Case Study Videos** — 4 embedded MP4 case studies with range-streaming support
+- **Artisanal Heritage Section** — 5 handcrafted ceremonial element cards with proper Marathi copy
+- **Interactive Gallery Lightbox** — Click-to-enlarge with Escape-to-close
+- **Founder Portrait** — Real cropped photograph of Sayali Sahasrabudhe integrated throughout
+- **Privacy Masking** — Phone/email masked per P0 privacy policy, no redundant labels
+
+---
+
+## Quick Start
+
+### Local Development
+
+```powershell
+cd E:\Clients\sunflower-events
+powershell -File scripts\serve-local.ps1
+# Opens http://localhost:8080
 ```
+
+### Deploy to Production (Hostinger VPS)
+
+```powershell
+powershell -File scripts\deploy-hostinger.ps1
+```
+
+Requires `E:\Clients\dg-online\.env.local` with `HOSTINGER_SSH_PASSWORD`.
+
+---
+
+## Repository Structure
+
+```
+presentation/          <- Deployable web app (NGINX serves this directory)
+  index.html           <- Main website
+  deck.html            <- 12-slide executive deck
+  website.css          <- Website design system
+  presentation.css     <- Deck styling (zero-scrollbar)
+  presentation.js      <- Deck engine (keyboard, touch, modals)
+  Dockerfile           <- NGINX Alpine container
+  assets/
+    gallery/           <- 12 real ceremony photos (1920px)
+    *.jpg / *.jpeg     <- Brand assets, founder portrait
+    *.mp4              <- 4 case study videos
+
+scripts/
+  serve-local.js       <- Node.js range-streaming server
+  serve-local.ps1      <- Local server launcher
+  deploy-hostinger.ps1 <- Production deployment pipeline
+  download-gallery.ps1 <- Re-fetch gallery from Odoo
+
+docs/
+  presentation-strategy-and-deck.md  <- Slide narrative & Marathi copy
+
+openspec/
+  presentation-spec.md               <- Technical specification
+
+HANDOFF.md             <- Detailed developer handoff document
+CLIENT_REQUIREMENTS_REGISTER.md <- Client scope & requirements
+```
+
+---
+
+## For the Next Developer
+
+See **[HANDOFF.md](HANDOFF.md)** for:
+- Complete environment & SSH credentials reference
+- Outstanding work items (what still needs to be done)
+- Privacy rules and P0 constraints
+- Git commit conventions
+- Client contact details
+
+---
+
+*Built & deployed by AI Engineering Control Plane — meta-data-projects Application Factory*
