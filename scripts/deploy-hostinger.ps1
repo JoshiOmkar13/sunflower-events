@@ -143,7 +143,8 @@ sleep 5
 docker service ps sunflower-events --format 'table {{.Name}}\t{{.CurrentState}}\t{{.Error}}'
 "@
 
-    $remoteScript = $remoteScript.Replace('__PUBLIC_HOST__', $PublicHost)
+    $routeHost = '`' + $PublicHost + '`'
+    $remoteScript = $remoteScript.Replace('__PUBLIC_HOST__', $routeHost)
     $remoteScript = $remoteScript.Replace('$DirectPort', $DirectPort.ToString())
 
     $out = & ssh.exe @sshOpts "${sshUser}@${HostName}" $remoteScript
