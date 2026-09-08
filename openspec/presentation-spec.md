@@ -37,6 +37,7 @@
 - **Text & Accents:** Champagne Ivory (`#f7f5ee`) and Soft Sage (`#a3b899`).
 
 ### 1.5 Privacy & Contact Data Policy
-- **Phone Number:** `9920431983` (Official business contact).
+- **Phone Number:** Masked (`+91 99204 •••••` per P0 Privacy Gate).
 - **Email:** Masked (`c********@sunflowerevents.com` or `contact@sunflowerevents.in`).
 - **Socials:** `@sunflowerevents_in_mumbai` (Instagram official handle).
+- **Founder Photo:** Authentic cropped portrait of Founder Sayali Sahasrabudhe.

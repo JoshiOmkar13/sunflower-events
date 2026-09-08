@@ -380,4 +380,6 @@ class SunflowerPresentationEngine {
 
 document.addEventListener('DOMContentLoaded', () => {
     window.sunflowerPresentation = new SunflowerPresentationEngine();
+    window.openVideoModal = (src, title) => window.sunflowerPresentation.openVideoModal(src, title);
+    window.closeVideoModal = () => window.sunflowerPresentation.closeVideoModal();
 });

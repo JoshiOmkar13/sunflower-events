@@ -603,13 +603,9 @@
         function handleInquirySubmit(e) {
             e.preventDefault();
             const name = document.getElementById('formName').value;
-            const phone = document.getElementById('formPhone').value;
             const eventType = document.getElementById('formEventType').value;
-            const details = document.getElementById('formDetails').value;
-
-            const msg = `Hello Sunflower Events,\nMy name is ${name} (${phone}).\nI would like to inquire about: ${eventType}.\nDetails: ${details}`;
-            const encoded = encodeURIComponent(msg);
-            window.open(`https://wa.me/919920431983?text=${encoded}`, '_blank');
+            alert(`धन्यवाद ${name}! Sunflower Events कडे आपली ${eventType} विषयी विचारणा नोंदवली गेली आहे. (गोपनीयतेसाठी थेट संपर्क क्रमांक संरक्षित / Masked ठेवण्यात आला आहे. आमची टीम लवकरच आपल्याशी संपर्क करेल.)\n\nThank you ${name}! Your inquiry for ${eventType} has been received. Our team will reach out to you shortly.`);
+            e.target.reset();
         }
     </script>
 </body>
