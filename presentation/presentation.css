@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    SUNFLOWER EVENTS LLP — Executive Presentation Styling (v3.0)
    Strict Zero-Scrollbar Guarantee • Split-Screen (Image + Diagram) Architecture
    Color Palette: Deep Olive & Bottle Green (#0a1610, #102117, #e5a93c)
@@ -272,14 +272,17 @@ body::after {
 
 .slide-header {
     flex-shrink: 0;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 
 .slide-tag-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .category-pill {
@@ -304,19 +307,22 @@ body::after {
 }
 
 .slide-title-en {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: var(--color-text-title);
-    line-height: 1.15;
+    line-height: 1.2;
     letter-spacing: -0.01em;
+    margin: 0;
 }
 
 .slide-title-mr {
     font-family: var(--font-mr-heading);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--color-gold);
-    line-height: 1.2;
+    line-height: 1.3;
+    margin-top: 2px;
+    margin-bottom: 0;
 }
 
 .slide-content {
@@ -325,12 +331,12 @@ body::after {
     overflow: hidden !important;
     display: flex;
     align-items: stretch;
-    padding: 2px 0;
+    padding: 4px 0;
 }
 
 .slide-split-grid {
     display: grid;
-    grid-template-columns: 0.92fr 1.08fr;
+    grid-template-columns: 0.9fr 1.1fr;
     gap: 18px;
     align-items: stretch;
     width: 100%;
@@ -357,19 +363,19 @@ body::after {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
     display: block;
     transition: transform 0.4s ease;
 }
 
 .slide-visual-col:hover img {
-    transform: scale(1.03);
+    transform: scale(1.02);
 }
 
 .slide-visual-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, transparent 40%, rgba(10, 22, 16, 0.85) 100%);
+    background: linear-gradient(180deg, transparent 40%, rgba(10, 22, 16, 0.88) 100%);
     pointer-events: none;
 }
 
@@ -378,7 +384,7 @@ body::after {
     bottom: 10px;
     left: 10px;
     right: 10px;
-    background: rgba(14, 30, 22, 0.92);
+    background: rgba(14, 30, 22, 0.94);
     backdrop-filter: blur(8px);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
@@ -390,6 +396,7 @@ body::after {
     font-weight: 700;
     color: var(--color-gold-bright);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    z-index: 2;
 }
 
 .slide-visual-badge .badge-icon {
@@ -401,7 +408,7 @@ body::after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     height: 100%;
     min-height: 0;
     overflow: hidden;
@@ -411,16 +418,18 @@ body::after {
     background: var(--color-bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
-    padding: 8px 12px;
-    transition: all 0.2s ease;
+    padding: 10px 14px;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .diag-card:hover {
     border-color: var(--color-gold);
     background: var(--color-bg-card-hover);
+    box-shadow: 0 6px 18px rgba(229, 169, 60, 0.15);
     transform: translateY(-1px);
 }
 
@@ -436,7 +445,7 @@ body::after {
 }
 
 .diag-card-title {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     font-weight: 800;
     color: #ffffff;
 }
@@ -448,23 +457,23 @@ body::after {
 }
 
 .diag-card-desc {
-    font-size: 0.73rem;
-    color: var(--color-text-secondary);
-    line-height: 1.35;
+    font-size: 0.76rem;
+    color: var(--color-text-body);
+    line-height: 1.4;
 }
 
 .diag-quad-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    height: 100%;
-    min-height: 0;
+    gap: 10px;
+    height: auto;
+    align-content: center;
 }
 
 .diag-pipeline-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 6px;
+    gap: 8px;
     width: 100%;
 }
 
@@ -472,7 +481,7 @@ body::after {
     background: var(--color-bg-card);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
-    padding: 8px 6px;
+    padding: 10px 8px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -487,12 +496,12 @@ body::after {
 }
 
 .diag-node-num {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     background: var(--color-gold);
     color: #0a1610;
-    font-size: 0.65rem;
+    font-size: 0.68rem;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -500,7 +509,7 @@ body::after {
 }
 
 .diag-node-title {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: #ffffff;
     line-height: 1.2;
@@ -508,18 +517,18 @@ body::after {
 
 .diag-node-mr {
     font-family: var(--font-mr-body);
-    font-size: 0.65rem;
+    font-size: 0.66rem;
     color: var(--color-gold-bright);
 }
 
 .diag-stack-list {
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    height: 100%;
-    min-height: 0;
-    justify-content: space-between;
+    gap: 10px;
+    height: auto;
+    justify-content: center;
 }
+
 
 .diag-pillars-grid {
     display: grid;
