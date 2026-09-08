@@ -603,7 +603,9 @@ body::after {
 }
 
 body.mode-en .marathi-text,
-body.mode-en .slide-title-mr {
+body.mode-en .slide-title-mr,
+body.mode-en .diag-card-sub,
+body.mode-en .diag-node-mr {
     display: none !important;
 }
 

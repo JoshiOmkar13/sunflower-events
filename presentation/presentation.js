@@ -219,20 +219,22 @@ class SunflowerPresentationEngine {
         const buttons = document.querySelectorAll('.lang-btn');
         buttons.forEach(btn => {
             btn.addEventListener('click', () => {
-                const mode = btn.getAttribute('data-mode');
-                this.setLanguageMode(mode);
+                const mode = btn.getAttribute('data-mode') || btn.getAttribute('data-lang');
+                if (mode) this.setLanguageMode(mode);
             });
         });
     }
 
     setLanguageMode(mode) {
+        if (!mode) return;
         this.languageMode = mode;
         document.body.classList.remove('mode-both', 'mode-en', 'mode-mr');
         document.body.classList.add(`mode-${mode}`);
 
         const buttons = document.querySelectorAll('.lang-btn');
         buttons.forEach(btn => {
-            btn.classList.toggle('active', btn.getAttribute('data-mode') === mode);
+            const btnMode = btn.getAttribute('data-mode') || btn.getAttribute('data-lang');
+            btn.classList.toggle('active', btnMode === mode);
         });
     }
 
