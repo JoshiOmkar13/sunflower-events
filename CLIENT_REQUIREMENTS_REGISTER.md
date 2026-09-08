@@ -30,6 +30,8 @@
 | **Asset Renaming & Organization** | `clients-docs/` & `presentation/assets/` | Completed |
 | **Founder Sayali Madam Original Cropped Photo** | `presentation/assets/sunflower-events-founder-sayali.jpg` | Completed & Integrated |
 | **12-Slide Zero-Scrollbar Presentation Deck** | `presentation/deck.html` | Completed (Images + Diagrams on every slide) |
+| **Real Celebrations Gallery Section** | `presentation/index.html#gallery` & `assets/gallery/` | Completed (12 authentic Odoo gallery assets) |
+| **Artisanal Heritage & Traditions** | `presentation/index.html#craft` | Completed (Presentable titles & badges) |
 | **Responsive Luxury Website (Bottle Green & Gold)** | `presentation/index.html` | Completed |
 | **Presentation CSS (Zero-Scrollbar & Split-Grid)** | `presentation/presentation.css` | Completed |
 | **Touch & Keyboard Presentation Engine** | `presentation/presentation.js` | Completed |

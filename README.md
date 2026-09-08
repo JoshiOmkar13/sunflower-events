@@ -17,12 +17,14 @@
 - **12-Slide Executive Architecture:** Exactly 12 focused slides condensing end-to-end strategic capabilities.
 - **Strict Zero-Scrollbar Guarantee:** Engineered with `100dvh`, strict container constraints, and `min-height: 0` so no slide ever renders a vertical or horizontal scrollbar on any device.
 - **Image + Diagrammatic Split-Screen:** Every slide features a high-definition photograph/visual on the left and a structured infographic diagram (process chevrons, quad cards, pillar matrices, timeline stacks) on the right.
+- **Real Celebrations Gallery:** Authentic high-resolution photo showcase extracted from live Sunflower Events ceremonies (Grand Stage Architecture, Royal Floral Mandap, Banquets Hall, Sacred Rangoli Art, Vedic Sanctity, Royal Palkhi Procession).
+- **Artisanal Heritage & Traditions:** Handcrafted ceremonial details (Custom Illustrated Antarpat, Paithani Dining Plates, Vedic Blessing Placards, Wooden Brooches, Mogra Petal Carpets).
 - **Founder Identity:** Real cropped photograph of Founder Sayali Sahasrabudhe integrated on website and presentation deck.
 - **Authentic Marathi & 'क्षण':** Culturally resonant Devanagari copy highlighting *अविस्मरणीय क्षण*, *मांगल्याचे क्षण*, and *सुवर्ण क्षण*.
 - **3-Way Bilingual Switcher:** Toggle dynamically between *Dual View (EN + मराठी)*, *English Only*, and *मराठी Only*.
 - **Embedded Media Hub:** Interactive video modal players with streaming support for verified client case studies (*Chi. Tanay 3,000 km, Chi. Advay Madhav Banquets, Chi. Aarin Vaze 23 Aug 2024*).
 - **Navigation Controls:** Keyboard shortcuts (`←`, `→`, `Space`, `O` for 12-slide grid overview, `B` for language switcher, `F` for fullscreen) and mobile touch gestures.
-- **Privacy Masked:** Contact numbers and emails masked per enterprise P0 privacy rules.
+- **Privacy Masked:** Contact numbers and emails masked per enterprise P0 privacy rules (with no redundant "Protected/Masked" labels).
 
 ---
 
