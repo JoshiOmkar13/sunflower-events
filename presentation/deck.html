@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUNFLOWER EVENTS LLP — Executive Corporate Presentation</title>
-    <meta name="description" content="End-to-End Event Strategy, Planning and Flawless Turnkey Execution by Sunflower Events LLP. Complete bilingual English and Marathi presentation.">
+    <meta name="description" content="End-to-End Event Strategy, Master Planning & Turnkey Execution. Diagram-driven bilingual presentation.">
     <link rel="stylesheet" href="presentation.css">
     <link rel="icon" type="image/jpeg" href="assets/sunflower-events-official-brand-logo.jpeg">
 </head>
@@ -23,26 +23,20 @@
         </div>
 
         <div class="top-controls">
-            <a href="index.html" style="background: rgba(14, 40, 31, 0.9); border: 1px solid var(--border-subtle); color: var(--color-gold); font-size: 0.75rem; font-weight: 700; padding: 5px 14px; border-radius: var(--radius-pill); text-decoration: none; display: flex; align-items: center; gap: 4px; transition: all 0.25s ease;">
+            <a href="index.html" class="back-website-btn">
                 <span>← Main Website</span>
             </a>
 
-            <!-- 3-Way Bilingual Switcher -->
-            <div class="lang-switcher-pill" title="Toggle Display Language">
-                <button class="lang-btn active" data-mode="both">
-                    <span>English + मराठी</span>
-                </button>
-                <button class="lang-btn" data-mode="en">
-                    <span>EN</span>
-                </button>
-                <button class="lang-btn" data-mode="mr">
-                    <span>मराठी</span>
-                </button>
+            <!-- 3-Way Language Mode Switcher -->
+            <div class="lang-switcher-pill">
+                <button class="lang-btn active" data-mode="both">English + मराठी</button>
+                <button class="lang-btn" data-mode="en">EN</button>
+                <button class="lang-btn" data-mode="mr">मराठी</button>
             </div>
 
             <!-- Slide Grid Overview Button -->
             <button class="icon-button" id="gridTriggerBtn" title="Slide Overview Grid (Press 'O')">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="3" width="7" height="7"></rect>
                     <rect x="14" y="3" width="7" height="7"></rect>
                     <rect x="14" y="14" width="7" height="7"></rect>
@@ -52,14 +46,14 @@
 
             <!-- Fullscreen Button -->
             <button class="icon-button" id="fullscreenBtn" title="Toggle Fullscreen (Press 'F')">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
                 </svg>
             </button>
         </div>
     </header>
 
-    <!-- Presentation Viewport Stage -->
+    <!-- Presentation Viewport Stage (Strict Zero-Scrollbar Guarantee) -->
     <main class="presentation-stage">
         <div class="slide-canvas">
 
@@ -67,47 +61,57 @@
             <section class="slide active" data-slide="1">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Corporate Profile • संस्था परिचय</span>
+                        <span class="category-pill">Executive Presentation • सोहळा सादरीकरण</span>
                         <span class="slide-counter-small">01 / 25</span>
                     </div>
                 </div>
                 <div class="slide-content">
-                    <div class="hero-layout">
-                        <div class="hero-text-block">
-                            <h1 class="hero-main-title">
-                                SUNFLOWER <span class="hero-highlight">EVENTS</span>
+                    <div class="cover-layout">
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <h1 style="font-family: var(--font-heading); font-size: 2.8rem; font-weight: 800; color: var(--color-text-title); line-height: 1.1;">
+                                SUNFLOWER <span style="color: var(--color-gold);">EVENTS</span>
                             </h1>
-                            <div class="hero-sub-en english-text">
-                                End-to-End Event Strategy, Master Planning &amp; Turnkey Execution.
+                            <div class="english-text" style="font-size: 1.15rem; font-weight: 700; color: var(--color-text-title);">
+                                End-to-End Event Strategy, Planning &amp; Flawless Execution
                             </div>
-                            <div class="hero-sub-mr marathi-text">
-                                एंड-टू-एंड इव्हेंट स्ट्रॅटेजी, परिपूर्ण नियोजन आणि अचूक अंमलबजावणी.
+                            <div class="marathi-text" style="font-family: var(--font-mr-heading); font-size: 1.05rem; color: var(--color-gold);">
+                                सोहळ्यातील प्रत्येक क्षण परिपूर्ण आणि अविस्मरणीय करण्याची जबाबदारी आमची!
                             </div>
-                            <p style="font-size: 0.95rem; color: var(--color-text-secondary); line-height: 1.5;" class="english-text">
-                                “From the first idea to the final closure — every detail, every person, and every micro-element is managed.”
+                            <p class="english-text" style="font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.45;">
+                                “From the first idea to the final closure — every detail, every ritual, and every micro-element is managed.”
                             </p>
-                            <p style="font-size: 0.9rem; color: var(--color-gold-bright); line-height: 1.5; font-family: var(--font-mr-body);" class="marathi-text">
-                                “पहिल्या कल्पनेपासून ते अंतिम सांगतेपर्यंत — प्रत्येक विधी, प्रत्येक पाहुणा आणि प्रत्येक सूक्ष्म घटक आदराने व शिस्तीने हाताळला जातो.”
+                            <p class="marathi-text" style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.45; font-family: var(--font-mr-body);">
+                                “पहिल्या संवादापासून ते अंतिम निरोपापर्यंत — आनंदाचे आणि मांगल्याचे प्रत्येक क्षण आम्ही सजवतो.”
                             </p>
-                            <div class="hero-stats-badge-row">
-                                <div class="hero-stat-pill">
-                                    <strong>18+</strong> Years Business Expertise
+                            <div style="display: flex; gap: 10px; margin-top: 6px;">
+                                <div style="background: var(--color-bg-card); border: 1px solid var(--border-subtle); padding: 6px 14px; border-radius: var(--radius-pill); font-size: 0.76rem;">
+                                    <strong style="color: var(--color-gold);">18+ Years</strong> Business Leadership
                                 </div>
-                                <div class="hero-stat-pill">
-                                    <strong>50+</strong> Events Since July 2023
+                                <div style="background: var(--color-bg-card); border: 1px solid var(--border-subtle); padding: 6px 14px; border-radius: var(--radius-pill); font-size: 0.76rem;">
+                                    <strong style="color: var(--color-gold);">50+</strong> Executed Celebrations
                                 </div>
-                                <div class="hero-stat-pill">
-                                    <strong>100%</strong> Turnkey In-House Coordination
+                                <div style="background: var(--color-bg-card); border: 1px solid var(--border-subtle); padding: 6px 14px; border-radius: var(--radius-pill); font-size: 0.76rem;">
+                                    <strong style="color: var(--color-gold);">100%</strong> Turnkey Coordination
                                 </div>
                             </div>
                         </div>
-                        <div class="hero-graphic-card">
-                            <img src="assets/sunflower-events-official-brand-logo.jpeg" alt="Sunflower Events Official Logo">
+
+                        <div class="cover-badge-emblem">
+                            <div class="cover-emblem-flower">🌻</div>
+                            <div style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 800; color: #fff; letter-spacing: 0.05em;">
+                                SUNFLOWER EVENTS LLP
+                            </div>
+                            <div style="font-size: 0.78rem; color: var(--color-gold); font-weight: 600; margin-top: 4px;">
+                                Crafting Unforgettable Moments • अविस्मरणीय क्षण
+                            </div>
+                            <div style="font-size: 0.72rem; color: var(--color-text-muted); margin-top: 8px;">
+                                Founder: Sayali Sahasrabudhe • Mumbai
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="slide-footer">
-                    <span class="footer-brand">SUNFLOWER EVENTS LLP • Sayali Sahasrabudhe</span>
+                    <span class="footer-brand">SUNFLOWER EVENTS LLP</span>
                     <span class="footer-quote">Crafting Unforgettable Moments</span>
                 </div>
             </section>
@@ -120,29 +124,42 @@
                         <span class="slide-counter-small">02 / 25</span>
                     </div>
                     <h2 class="slide-title-en english-text">The Big Idea</h2>
-                    <h3 class="slide-title-mr marathi-text">आमचा मूलभूत विचार</h3>
+                    <h3 class="slide-title-mr marathi-text">आमचा मूलभूत विचार: प्रत्येक क्षण महत्त्वाचा</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="statement-box">
-                        <div class="statement-quote-en english-text">
+                    <div style="background: linear-gradient(135deg, rgba(28, 56, 41, 0.6) 0%, rgba(16, 33, 23, 0.8) 100%); border: 1.5px solid var(--border-glow); border-radius: var(--radius-md); padding: 20px 24px; margin-bottom: 14px;">
+                        <div class="english-text" style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: #fff; line-height: 1.3; margin-bottom: 8px;">
                             “Great events don’t happen by chance. They are strategically designed, meticulously planned, and flawlessly executed.”
                         </div>
-                        <div class="statement-quote-mr marathi-text">
-                            “भव्य आणि अविस्मरणीय सोहळे योगायोगाने घडत नाहीत; ते विचारपूर्वक डिझाइन केले जातात, काटेकोरपणे नियोजित केले जातात आणि अचूकपणे साकारले जातात.”
+                        <div class="marathi-text" style="font-family: var(--font-mr-heading); font-size: 1.05rem; color: var(--color-gold); line-height: 1.4;">
+                            “भव्य आणि अविस्मरणीय सोहळे योगायोगाने घडत नाहीत; त्यातील प्रत्येक क्षण विचारपूर्वक डिझाइन केला जातो, काटेकोरपणे नियोजित केला जातो आणि अचूकपणे साकारला जातो.”
                         </div>
                     </div>
-                    <div class="bilingual-split" style="margin-top: 24px;">
-                        <div class="bilingual-card">
-                            <span class="lang-indicator">The Strategic View</span>
-                            <p class="english-text" style="font-size: 0.95rem; line-height: 1.55; color: var(--color-text-secondary);">
-                                An extraordinary milestone is never left to luck. We treat every celebration as a high-precision operation combining cultural reverence, minute-by-minute schedules, and calm, confident backstage control.
-                            </p>
+
+                    <!-- 3-Stage Architectural Diagram -->
+                    <div class="cards-tri-grid">
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">📐</div>
+                            <div class="card-tri-title-en english-text">1. Strategic Design</div>
+                            <div class="card-tri-title-mr marathi-text">१. विचारपूर्वक रचना</div>
+                            <div class="card-tri-desc english-text">Understanding family narrative and ritual sanctity before booking vendors.</div>
+                            <div class="card-tri-desc marathi-text">कुटुंबाच्या परंपरा आणि संस्कृतीचा आदर ठेवून सुरुवातीची आखणी.</div>
                         </div>
-                        <div class="bilingual-card">
-                            <span class="lang-indicator">दृष्टिकोन</span>
-                            <p class="marathi-text" style="font-size: 0.9rem; line-height: 1.6; color: var(--color-text-secondary); font-family: var(--font-mr-body);">
-                                कोणताही महत्त्वाचा सोहळा हा केवळ नशिबावर सोडता येत नाही. भारतीय संस्कृतीचा आदर, वेळेची काटेकोर शिस्त आणि शांत, नियंत्रित नियोजन यांच्या संगमातून आम्ही सोहळ्याला दिव्य अनुभूतीचे रूप देतो.
-                            </p>
+
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">⏱️</div>
+                            <div class="card-tri-title-en english-text">2. Meticulous Planning</div>
+                            <div class="card-tri-title-mr marathi-text">२. काटेकोर नियोजन</div>
+                            <div class="card-tri-desc english-text">Minute-by-minute run-sheets synchronizing all 15+ teams in 15-min windows.</div>
+                            <div class="card-tri-desc marathi-text">मुहूर्त, विधी आणि भोजन यांचे अचूक वेळापत्रक.</div>
+                        </div>
+
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">✨</div>
+                            <div class="card-tri-title-en english-text">3. Flawless Execution</div>
+                            <div class="card-tri-title-mr marathi-text">३. अचूक अंमलबजावणी</div>
+                            <div class="card-tri-desc english-text">Quiet on-ground command ensuring the host family enjoys every single moment.</div>
+                            <div class="card-tri-desc marathi-text">यजमानांना कसलाही ताण न देता आनंदाचे क्षण अनुभवण्याची संधी.</div>
                         </div>
                     </div>
                 </div>
@@ -156,50 +173,46 @@
             <section class="slide" data-slide="3">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Leadership &amp; Identity • नेतृत्व आणि ओळख</span>
+                        <span class="category-pill">Leadership • नेतृत्व आणि अनुभव</span>
                         <span class="slide-counter-small">03 / 25</span>
                     </div>
-                    <h2 class="slide-title-en english-text">Who We Are</h2>
-                    <h3 class="slide-title-mr marathi-text">आम्ही कोण आहोत</h3>
+                    <h2 class="slide-title-en english-text">Who We Are: Strategic Leadership</h2>
+                    <h3 class="slide-title-mr marathi-text">आम्ही कोण आहोत: १८+ वर्षांचा व्यवसाय अनुभव</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="founder-grid">
-                        <div class="founder-photo-frame">
-                            <img src="assets/sunflower-events-company-profile-sayali-sahasrabudhe.jpeg" alt="Sayali Sahasrabudhe - Founder">
-                            <div class="founder-meta-badge">
-                                <h4>Sayali Sahasrabudhe</h4>
-                                <p>Founder • Event Strategist • Business Facilitator</p>
-                            </div>
+                    <div class="cards-dual-grid">
+                        <div class="card-tri-box" style="border-left: 4px solid var(--color-gold); justify-content: center;">
+                            <div style="font-size: 0.72rem; color: var(--color-gold); font-weight: 700; text-transform: uppercase;">Founder &amp; Event Strategist</div>
+                            <h3 style="font-family: var(--font-heading); font-size: 1.4rem; color: #fff; margin-bottom: 6px;">Sayali Sahasrabudhe</h3>
+                            <p class="english-text" style="font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.45;">
+                                Entrepreneur with <strong>18+ years of business leadership</strong> gained through founding and successfully scaling <em>Everything For Her</em>. Expert in client relations, operations, and cross-cultural Indian traditions.
+                            </p>
+                            <p class="marathi-text" style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.45; font-family: var(--font-mr-body); margin-top: 4px;">
+                                संस्थापक सायली सहस्रबुद्धे यांच्या १८+ वर्षांच्या व्यावसायिक अनुभवातून साकारलेली संस्था. भारतीय संस्कृती व आधुनिक व्यवस्थापन यांची सांगड घालून त्या सोहळ्यातील प्रत्येक क्षण अविस्मरणीय बनवतात.
+                            </p>
                         </div>
-                        <div class="founder-narrative">
-                            <div class="bilingual-card">
-                                <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 8px;" class="english-text">
-                                    Strategic Execution Grounded in 18+ Years of Business Leadership
-                                </h4>
-                                <p class="english-text" style="font-size: 0.92rem; line-height: 1.55; color: var(--color-text-secondary);">
-                                    Sunflower Events is founded and spearheaded by <strong>Sayali Sahasrabudhe</strong>, an entrepreneur with over 18 years of proven business management, client relations, and operational leadership gained through founding and successfully scaling <em>Everything For Her</em>. Known for meticulous coordination, cultural authenticity, and warm hospitality, she transforms family milestones into seamless, unforgettable memories.
-                                </p>
-                                <p class="marathi-text" style="font-size: 0.88rem; line-height: 1.6; color: var(--color-text-secondary); margin-top: 10px; font-family: var(--font-mr-body);">
-                                    संस्थापक <strong>सायली सहस्रबुद्धे</strong> यांच्या १८+ वर्षांच्या व्यावसायिक अनुभवातून साकारलेली संस्था. <em>Everything For Her</em> या यशस्वी उद्योगाच्या माध्यमातून त्यांनी व्यवस्थापन, ग्राहक संवाद आणि टीम लीडरशिपमध्ये उच्च मापदंड प्रस्थापित केले आहेत. परंपरांचे सखोल ज्ञान आणि आधुनिक व्यवस्थापन कौशल्याची सांगड घालून त्या प्रत्येक सोहळ्याला राजेशाही आणि तणावमुक्त स्वरूप देतात.
-                                </p>
-                            </div>
 
-                            <div class="metric-highlights-row">
-                                <div class="metric-highlight-card">
-                                    <div class="metric-big-num">18+</div>
-                                    <div class="metric-label-en">Years Experience</div>
-                                    <div class="metric-label-mr">वर्षे व्यवसाय नेतृत्व</div>
-                                </div>
-                                <div class="metric-highlight-card">
-                                    <div class="metric-big-num">50+</div>
-                                    <div class="metric-label-en">Events Executed</div>
-                                    <div class="metric-label-mr">यशस्वी सोहळे</div>
-                                </div>
-                                <div class="metric-highlight-card">
-                                    <div class="metric-big-num">100%</div>
-                                    <div class="metric-label-en">Turnkey Ownership</div>
-                                    <div class="metric-label-mr">संपूर्ण जबाबदारी</div>
-                                </div>
+                        <!-- Structured Credentials Diagram -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                            <div class="metric-stat-box">
+                                <div class="metric-stat-num">18+</div>
+                                <div class="metric-stat-title-en">Years Leadership</div>
+                                <div class="metric-stat-title-mr">वर्षे व्यवसाय नेतृत्व</div>
+                            </div>
+                            <div class="metric-stat-box">
+                                <div class="metric-stat-num">50+</div>
+                                <div class="metric-stat-title-en">Events Executed</div>
+                                <div class="metric-stat-title-mr">यशस्वी सोहळे</div>
+                            </div>
+                            <div class="metric-stat-box">
+                                <div class="metric-stat-num">100%</div>
+                                <div class="metric-stat-title-en">Turnkey In-House</div>
+                                <div class="metric-stat-title-mr">संपूर्ण जबाबदारी</div>
+                            </div>
+                            <div class="metric-stat-box">
+                                <div class="metric-stat-num">3000+</div>
+                                <div class="metric-stat-title-en">km NRI Reach</div>
+                                <div class="metric-stat-title-mr">किमी रिमोट नियोजन</div>
                             </div>
                         </div>
                     </div>
@@ -214,44 +227,32 @@
             <section class="slide" data-slide="4">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Our Commitment • आमचे वचन</span>
+                        <span class="category-pill">Our Promise • आमचे वचन</span>
                         <span class="slide-counter-small">04 / 25</span>
                     </div>
-                    <h2 class="slide-title-en english-text">Our Core Promise</h2>
-                    <h3 class="slide-title-mr marathi-text">आमचे ठाम वचन</h3>
+                    <h2 class="slide-title-en english-text">Our Core Promise: Complete Ownership</h2>
+                    <h3 class="slide-title-mr marathi-text">आमचे वचन: संपूर्ण जबाबदारी आणि तणावमुक्ती</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="bilingual-split">
-                        <div class="feature-card" style="border-left: 4px solid var(--color-gold);">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">🛡️</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">From 1st Discussion to Final Farewell</h4>
-                                    <h5 class="feature-heading-mr marathi-text">पहिल्या चर्चेपासून ते शेवटच्या निरोपापर्यंत</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                When a family hosts an event, they shouldn't spend their day chasing caterers, coordinating sound technicians, or worrying about puja samagri. Our promise is simple: <strong>We take 100% ownership.</strong> You enjoy the celebration as an honored host while we run the backstage machinery.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                सोहळा सुरू असताना यजमानांनी केटरर्स किंवा मंडपवाल्यांच्या मागे धावपळ करायची नसते; तर कुटुंबासोबत आनंद साजरा करायचा असतो. आमचे वचन आहे: <strong>संपूर्ण सोहळ्याची १००% जबाबदारी आमची!</strong> पडद्यामागील सर्व व्यवस्था आम्ही सांभाळतो, जेणेकरून तुम्ही निश्चिंत राहू शकता.
-                            </p>
+                    <div class="cards-dual-grid">
+                        <div class="card-tri-box" style="border-top: 3px solid #ef4444;">
+                            <div style="font-size: 0.72rem; color: #f87171; font-weight: 700; text-transform: uppercase;">Without Sunflower Events (पारंपरिक पद्धत)</div>
+                            <h4 style="font-size: 1rem; color: #fff; margin: 4px 0;">Fragmented Vendor Chaos</h4>
+                            <ul style="margin-left: 18px; font-size: 0.76rem; color: var(--color-text-secondary); line-height: 1.55;">
+                                <li>Host chases 15+ separate vendors during the ceremony.</li>
+                                <li>Family misses sacred rituals due to coordination panic.</li>
+                                <li>Dining queues and food delays frustrate senior guests.</li>
+                            </ul>
                         </div>
 
-                        <div class="feature-card" style="border-left: 4px solid var(--color-emerald);">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">✨</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Zero Surprises • Absolute Clarity</h4>
-                                    <h5 class="feature-heading-mr marathi-text">पारदर्शक नियोजन • शून्य गोंधळ</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                Every ritual, welcome moment, meal timing, and guest flow is documented into our master run-sheet weeks in advance. No last-minute panic. No hidden costs. Disciplined execution delivered with genuine warmth and cultural dignity.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                प्रत्येक विधी, पाहुण्यांचे स्वागत, भोजनाची वेळ आणि इतर सर्व तपशील आधीच अचूक वेळापत्रकात नोंदवले जातात. ऐनवेळी कोणतीही धावपळ नाही, कसलाही छुपा खर्च नाही. संस्कृतीचा सन्मान आणि आपुलकीचे आदरातिथ्य हेच आमचे वैशिष्ट्य.
-                            </p>
+                        <div class="card-tri-box" style="border-top: 3px solid var(--color-olive-bright);">
+                            <div style="font-size: 0.72rem; color: var(--color-olive-bright); font-weight: 700; text-transform: uppercase;">With Sunflower Events (सनफ्लॉवर पद्धत)</div>
+                            <h4 style="font-size: 1rem; color: var(--color-gold); margin: 4px 0;">Single Point of Complete Control</h4>
+                            <ul style="margin-left: 18px; font-size: 0.76rem; color: #fff; line-height: 1.55;">
+                                <li>100% turnkey ownership from 1st discussion to farewell.</li>
+                                <li>Family members enjoy every sacred and joyous moment (क्षण).</li>
+                                <li>Discreet backstage management with zero host stress.</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -261,88 +262,32 @@
                 </div>
             </section>
 
-            <!-- SLIDE 05: THE 14-PILLAR ECOSYSTEM -->
+            <!-- SLIDE 05: 14-PILLAR ECOSYSTEM -->
             <section class="slide" data-slide="5">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Operating Universe • व्यवस्थापन परिसंस्था</span>
+                        <span class="category-pill">Ecosystem • व्यवस्थापन परिसंस्था</span>
                         <span class="slide-counter-small">05 / 25</span>
                     </div>
                     <h2 class="slide-title-en english-text">The 14-Pillar Event Ecosystem</h2>
                     <h3 class="slide-title-mr marathi-text">आमची १४-सूत्री इव्हेंट परिसंस्था</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="ecosystem-grid">
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🎯</span>
-                            <span class="pillar-title-en">Strategy</span>
-                            <span class="pillar-title-mr">स्ट्रॅटेजी</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">⏱️</span>
-                            <span class="pillar-title-en">Timeline</span>
-                            <span class="pillar-title-mr">वेळापत्रक</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🏛️</span>
-                            <span class="pillar-title-en">Venue Infra</span>
-                            <span class="pillar-title-mr">जागा नियोजन</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🎭</span>
-                            <span class="pillar-title-en">Stage &amp; AV</span>
-                            <span class="pillar-title-mr">स्टेज व साऊंड</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🪔</span>
-                            <span class="pillar-title-en">Rituals</span>
-                            <span class="pillar-title-mr">वैदिक विधी</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🌺</span>
-                            <span class="pillar-title-en">Hospitality</span>
-                            <span class="pillar-title-mr">आदरातिथ्य</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🍽️</span>
-                            <span class="pillar-title-en">Catering</span>
-                            <span class="pillar-title-mr">भोजन व्यवस्था</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🎵</span>
-                            <span class="pillar-title-en">Live Music</span>
-                            <span class="pillar-title-mr">सुगम संगीत</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">📻</span>
-                            <span class="pillar-title-en">Radio Flow</span>
-                            <span class="pillar-title-mr">संवाद यंत्रणा</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🚑</span>
-                            <span class="pillar-title-en">Safety</span>
-                            <span class="pillar-title-mr">सुरक्षा नियोजन</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🚚</span>
-                            <span class="pillar-title-en">Logistics</span>
-                            <span class="pillar-title-mr">लॉजिस्टिक्स</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🎨</span>
-                            <span class="pillar-title-en">Custom Decor</span>
-                            <span class="pillar-title-mr">सानुकूल सजावट</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🔍</span>
-                            <span class="pillar-title-en">Micro Details</span>
-                            <span class="pillar-title-mr">सूक्ष्म घटक</span>
-                        </div>
-                        <div class="ecosystem-pillar">
-                            <span class="pillar-icon">🤝</span>
-                            <span class="pillar-title-en">Final Wrap</span>
-                            <span class="pillar-title-mr">सन्मान्य सांगता</span>
-                        </div>
+                    <div class="diagram-grid-14">
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🎯</span><span class="pillar-name-en">Strategy</span><span class="pillar-name-mr">स्ट्रॅटेजी</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">⏱️</span><span class="pillar-name-en">Timeline</span><span class="pillar-name-mr">वेळापत्रक</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🏛️</span><span class="pillar-name-en">Venue</span><span class="pillar-name-mr">जागा नियोजन</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🎭</span><span class="pillar-name-en">Stage &amp; AV</span><span class="pillar-name-mr">स्टेज व साऊंड</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🪔</span><span class="pillar-name-en">Rituals</span><span class="pillar-name-mr">वैदिक विधी</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🌺</span><span class="pillar-name-en">Hospitality</span><span class="pillar-name-mr">आदरातिथ्य</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🍽️</span><span class="pillar-name-en">Catering</span><span class="pillar-name-mr">भोजन व्यवस्था</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🎵</span><span class="pillar-name-en">Live Music</span><span class="pillar-name-mr">सुगम संगीत</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">📻</span><span class="pillar-name-en">Radio Flow</span><span class="pillar-name-mr">संवाद यंत्रणा</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🚑</span><span class="pillar-name-en">Safety</span><span class="pillar-name-mr">सुरक्षा नियोजन</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🚚</span><span class="pillar-name-en">Logistics</span><span class="pillar-name-mr">लॉजिस्टिक्स</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🎨</span><span class="pillar-name-en">Custom Decor</span><span class="pillar-name-mr">सानुकूल सजावट</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🔍</span><span class="pillar-name-en">Micro Details</span><span class="pillar-name-mr">सूक्ष्म घटक</span></div>
+                        <div class="diagram-pillar-card"><span class="pillar-icon-sm">🤝</span><span class="pillar-name-en">Final Wrap</span><span class="pillar-name-mr">सन्मान्य सांगता</span></div>
                     </div>
                 </div>
                 <div class="slide-footer">
@@ -355,62 +300,22 @@
             <section class="slide" data-slide="6">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Execution Journey • कार्यप्रणाली</span>
+                        <span class="category-pill">Journey • ८ टप्प्यांची कार्यप्रणाली</span>
                         <span class="slide-counter-small">06 / 25</span>
                     </div>
                     <h2 class="slide-title-en english-text">From Vision to Experience</h2>
                     <h3 class="slide-title-mr marathi-text">संकल्पनेपासून अनुभूतीपर्यंतचा ८-टप्पी प्रवास</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="journey-track">
-                        <div class="journey-step">
-                            <div class="step-number">1</div>
-                            <div class="step-title-en">Idea</div>
-                            <div class="step-title-mr">संकल्पना</div>
-                            <div class="step-desc">Family intent, cultural aspirations &amp; vision definition.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">2</div>
-                            <div class="step-title-en">Strategy</div>
-                            <div class="step-title-mr">स्ट्रॅटेजी</div>
-                            <div class="step-desc">Budget blueprint, ritual sequencing &amp; milestone setting.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">3</div>
-                            <div class="step-title-en">Planning</div>
-                            <div class="step-title-mr">नियोजन</div>
-                            <div class="step-desc">15-min master run-sheets, vendor SLAs &amp; layout design.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">4</div>
-                            <div class="step-title-en">Design</div>
-                            <div class="step-title-mr">आर्टवर्क</div>
-                            <div class="step-desc">Custom Antarpat, Khan dining decor &amp; theme aesthetics.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">5</div>
-                            <div class="step-title-en">Coordination</div>
-                            <div class="step-title-mr">समन्वय</div>
-                            <div class="step-desc">Vendor alignment, rehearsals &amp; samagri verification.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">6</div>
-                            <div class="step-title-en">Execution</div>
-                            <div class="step-title-mr">अंमलबजावणी</div>
-                            <div class="step-desc">Live command center, acoustic sync &amp; flow control.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">7</div>
-                            <div class="step-title-en">Experience</div>
-                            <div class="step-title-mr">अनुभूती</div>
-                            <div class="step-desc">Royal welcome, emotional rituals &amp; guest delight.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">8</div>
-                            <div class="step-title-en">Closure</div>
-                            <div class="step-title-mr">सांगता</div>
-                            <div class="step-desc">Zero-dispute vendor accounts &amp; graceful handover.</div>
-                        </div>
+                    <div class="process-pipeline">
+                        <div class="pipeline-node"><div class="pipeline-badge">1</div><div class="pipeline-title-en">Idea</div><div class="pipeline-title-mr">संकल्पना</div><div class="pipeline-desc">Intent &amp; vision.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">2</div><div class="pipeline-title-en">Strategy</div><div class="pipeline-title-mr">स्ट्रॅटेजी</div><div class="pipeline-desc">Blueprint &amp; budget.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">3</div><div class="pipeline-title-en">Planning</div><div class="pipeline-title-mr">नियोजन</div><div class="pipeline-desc">Run-sheet &amp; SLAs.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">4</div><div class="pipeline-title-en">Design</div><div class="pipeline-title-mr">आर्टवर्क</div><div class="pipeline-desc">Custom Antarpat.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">5</div><div class="pipeline-title-en">Coord</div><div class="pipeline-title-mr">समन्वय</div><div class="pipeline-desc">Rehearsals &amp; puja.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">6</div><div class="pipeline-title-en">Execute</div><div class="pipeline-title-mr">अंमलबजावणी</div><div class="pipeline-desc">Command center.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">7</div><div class="pipeline-title-en">Delight</div><div class="pipeline-title-mr">अनुभूती</div><div class="pipeline-desc">अविस्मरणीय क्षण.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">8</div><div class="pipeline-title-en">Closure</div><div class="pipeline-title-mr">सांगता</div><div class="pipeline-desc">Clean settlement.</div></div>
                     </div>
                 </div>
                 <div class="slide-footer">
@@ -430,53 +335,29 @@
                     <h3 class="slide-title-mr marathi-text">कौटुंबिक भावनांचे शिस्तबद्ध व्यवस्थापनात रूपांतर</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="card-grid-3">
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">💡</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Discovery &amp; Cultural Alignment</h4>
-                                    <h5 class="feature-heading-mr marathi-text">परंपरांचे सखोल आकलन</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                We begin by understanding your family’s traditions, community customs, and emotional priorities. We ensure rituals are honored authentically without awkward commercialization.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                आम्ही सुरुवातीला थेट व्हेंडर्सकडे जात नाही; तर कुटुंबाच्या परंपरा, चालीरीती आणि अपेक्षा समजून घेतो, जेणेकरून विधींना योग्य पावित्र्य लाभेल.
-                            </p>
+                    <div class="cards-tri-grid">
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">💡</div>
+                            <div class="card-tri-title-en english-text">Cultural Discovery</div>
+                            <div class="card-tri-title-mr marathi-text">परंपरांचे सखोल आकलन</div>
+                            <div class="card-tri-desc english-text">Understanding unique family rituals across communities to preserve sacred dignity.</div>
+                            <div class="card-tri-desc marathi-text">कुटुंबाच्या विधी आणि चालीरीती समजून घेऊन योग्य पावित्र्य राखणे.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">📊</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Guest Profiling &amp; Flow Architecture</h4>
-                                    <h5 class="feature-heading-mr marathi-text">अतिथी वर्गीकरण व नियोजन</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                Analyzing guest demographics: senior citizens needing comfortable seating, visiting NRI relatives needing hospitality, and children needing engaging traditional moments.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                ज्येष्ठ मंडळींची बैठक व्यवस्था, परदेशातून येणाऱ्या पाहुण्यांचे आदरातिथ्य आणि लहान मुलांचा आनंद या सर्वांचे अचूक नियोजन केले जाते.
-                            </p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">📊</div>
+                            <div class="card-tri-title-en english-text">Guest Flow Profiling</div>
+                            <div class="card-tri-title-mr marathi-text">अतिथी वर्गीकरण व नियोजन</div>
+                            <div class="card-tri-desc english-text">Dedicated arrangements for senior citizens, visiting NRI relatives, and children.</div>
+                            <div class="card-tri-desc marathi-text">ज्येष्ठ नागरिकांची बैठक व्यवस्था आणि परदेशातील पाहुण्यांचे आदरातिथ्य.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">💰</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Budget Optimization &amp; Value</h4>
-                                    <h5 class="feature-heading-mr marathi-text">अंदाजपत्रक व मूल्य संवर्धन</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                Eliminating duplicate vendor markups. We allocate resources where they create genuine emotional and visual impact for your guests.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                अनावश्यक खर्च टाळून ज्या घटकांमुळे सोहळ्याची शोभा वाढेल आणि पाहुण्यांना आनंद मिळेल तिथेच योग्य निधीची गुंतवणूक केली जाते.
-                            </p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">💰</div>
+                            <div class="card-tri-title-en english-text">Value &amp; Budget Optimization</div>
+                            <div class="card-tri-title-mr marathi-text">अंदाजपत्रक व मूल्य संवर्धन</div>
+                            <div class="card-tri-desc english-text">Eliminating duplicate vendor margins; investing in genuine emotional impact.</div>
+                            <div class="card-tri-desc marathi-text">अनावश्यक खर्च टाळून सोहळ्याची शोभा वाढवणाऱ्या घटकांवर भर.</div>
                         </div>
                     </div>
                 </div>
@@ -497,37 +378,21 @@
                     <h3 class="slide-title-mr marathi-text">मिनिटा-मिनिटाचे अचूक वेळापत्रक (रन-शीट)</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="bilingual-split">
-                        <div class="bilingual-card">
-                            <span class="lang-indicator">Proprietary Run-Sheet Engine</span>
-                            <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 8px;" class="english-text">
-                                Synchronizing 15+ Teams in 15-Minute Windows
-                            </h4>
-                            <p class="english-text" style="font-size: 0.9rem; line-height: 1.55; color: var(--color-text-secondary);">
-                                Our master timeline orchestrates priests, live vocalists, decorators, and caterers so no ritual is rushed, no guest waits for food, and the sacred auspicious muhurat is met with total serenity.
-                            </p>
-                            <ul style="margin-top: 12px; margin-left: 18px; font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.6;" class="english-text">
-                                <li><strong>Pre-Event T-120:</strong> Hall handover, sound-check &amp; flower petal path setup.</li>
-                                <li><strong>T-00 to T+60:</strong> Welcome with ittar &amp; gajra; live Sugam Sangeet starts.</li>
-                                <li><strong>T+90 to T+150:</strong> Sacred muhurat, custom Antarpat unveil, flower shower.</li>
-                                <li><strong>T+150:</strong> Wave-based dining transition with Khan-bordered service.</li>
-                            </ul>
+                    <div class="cards-dual-grid">
+                        <div class="card-tri-box">
+                            <div style="font-size: 0.72rem; color: var(--color-gold); font-weight: 700;">PROPRIETARY RUN-SHEET ENGINE</div>
+                            <div style="font-size: 0.95rem; font-weight: 800; color: #fff;">15-Minute Synchronization Windows</div>
+                            <div style="margin-top: 6px; font-size: 0.75rem; color: var(--color-text-secondary); line-height: 1.5;">
+                                Priests, live audio vocalists, decorators, and caterers synchronized down to 15-minute intervals. The sacred muhurat is hit with total serenity.
+                            </div>
                         </div>
 
-                        <div class="bilingual-card">
-                            <span class="lang-indicator">काटेकोर वेळापत्रक</span>
-                            <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 8px;" class="marathi-text">
-                                मुहूर्त, विधी आणि भोजनाची परिपूर्ण सांगड
-                            </h4>
-                            <p class="marathi-text" style="font-size: 0.88rem; line-height: 1.6; color: var(--color-text-secondary); font-family: var(--font-mr-body);">
-                                आमची विशेष रन-शीट भटजी, संगीतकार, सजावटकार आणि केटरर्स यांच्यात १५-१५ मिनिटांच्या टप्प्यावर अचूक ताळमेळ ठेवते. यामुळे शुभ मुहूर्तावर विधी पूर्ण होतात आणि पाहुण्यांचे जेवणही वेळेवर होते.
-                            </p>
-                            <ul style="margin-top: 12px; margin-left: 18px; font-size: 0.82rem; color: var(--color-text-secondary); line-height: 1.6; font-family: var(--font-mr-body);" class="marathi-text">
-                                <li><strong>सोहळ्यापूर्वी २ तास:</strong> हॉल ताबा, साऊंड चेक व रांगोळी-पुष्पमार्ग पूर्ण.</li>
-                                <li><strong>प्रारंभ:</strong> अत्तर-गजरा स्वागत व सुगम संगीत मैफिलीची सुरुवात.</li>
-                                <li><strong>मुख्य विधी:</strong> शुभ मुहूर्त, सानुकूल अंतरपाट व अक्षता-पुष्पवृष्टी.</li>
-                                <li><strong>भोजन:</strong> खान/पैठणी किनारीच्या पानात पारंपरिक पंक्ती भोजन.</li>
-                            </ul>
+                        <div class="card-tri-box">
+                            <div style="font-size: 0.72rem; color: var(--color-gold); font-weight: 700;">अचूक वेळापत्रक</div>
+                            <div style="font-size: 0.95rem; font-weight: 800; color: #fff;">मुहूर्त, विधी आणि भोजन सांगड</div>
+                            <div style="margin-top: 6px; font-size: 0.75rem; color: var(--color-text-secondary); line-height: 1.5; font-family: var(--font-mr-body);">
+                                भटजी, तंत्रज्ञ आणि केटरर्स यांच्यात परिपूर्ण समन्वय. शुभ मुहूर्त चुकत नाही आणि पाहुण्यांचे भोजनही वेळेवर होते.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -537,64 +402,40 @@
                 </div>
             </section>
 
-            <!-- SLIDE 09: VENUE & INFRASTRUCTURE -->
+            <!-- SLIDE 09: VENUE & SPATIAL INFRASTRUCTURE -->
             <section class="slide" data-slide="9">
                 <div class="slide-header">
                     <div class="slide-tag-row">
                         <span class="category-pill">Pillar 03 • जागा नियोजन</span>
                         <span class="slide-counter-small">09 / 25</span>
                     </div>
-                    <h2 class="slide-title-en english-text">Venue Architecture &amp; Crowd Dynamics</h2>
+                    <h2 class="slide-title-en english-text">Venue Architecture &amp; Spatial Flow</h2>
                     <h3 class="slide-title-mr marathi-text">जागा नियोजन, बैठक व्यवस्था आणि सुलभ हालचाल</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="card-grid-3">
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">🚪</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Zoned Ingress &amp; Welcome</h4>
-                                    <h5 class="feature-heading-mr marathi-text">भव्य प्रवेशद्वार व स्वागत क्षेत्र</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                Segregated welcome foyers with live rangoli displays and floral marigold arches ensure arriving guests are greeted warmly without bottlenecking the entrance.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                प्रवेशद्वारावर आकर्षक रांगोळी आणि फुलांच्या कमानीमुळे पाहुण्यांचे उत्साहात स्वागत होते आणि दारात गर्दी न होता आत जाण्याचा मार्ग मोकळा राहतो.
-                            </p>
+                    <div class="cards-tri-grid">
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🚪</div>
+                            <div class="card-tri-title-en english-text">Welcome Foyer</div>
+                            <div class="card-tri-title-mr marathi-text">प्रवेशद्वार व रांगोळी मार्ग</div>
+                            <div class="card-tri-desc english-text">Live portrait rangoli and floral marigold arches without entrance bottlenecks.</div>
+                            <div class="card-tri-desc marathi-text">प्रवेशद्वारावर आकर्षक रांगोळी व पुष्प कमानीमुळे शाही स्वागत.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">🛋️</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Sacred Mandap &amp; Sightlines</h4>
-                                    <h5 class="feature-heading-mr marathi-text">विधी मंडप व दृश्यमानता</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                Elevated ritual risers and unobstructed seating angles allow all 200+ seated guests to view sacred Vedic fire ceremonies in comfort.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                विधी मंडपाची विशिष्ट उंची आणि योग्य बैठक व्यवस्थेमुळे शेवटच्या रांगेतील पाहुण्यांनाही होमकुंड व विधी स्पष्टपणे पाहता येतात.
-                            </p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🛋️</div>
+                            <div class="card-tri-title-en english-text">Mandap Sightlines</div>
+                            <div class="card-tri-title-mr marathi-text">विधी मंडप व दृश्यमानता</div>
+                            <div class="card-tri-desc english-text">Elevated seating allowing 200+ seated guests to witness Vedic rituals comfortably.</div>
+                            <div class="card-tri-desc marathi-text">सर्व पाहुण्यांना होमकुंड व विधी स्पष्ट दिसतील अशी बैठक व्यवस्था.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">🍲</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Dining &amp; Buffet Transitions</h4>
-                                    <h5 class="feature-heading-mr marathi-text">भोजन कक्ष व गर्दीचे नियंत्रण</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                Dual-counter buffet flows and traditional sit-down Chauki zones engineered to eliminate lines and maintain pristine dining hygiene.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                बुफे काउन्टर्स आणि पारंपरिक चौरंग-पाट पंक्तींचे विभाजन केल्यामुळे जेवणाच्या वेळी रांगा लागत नाहीत व स्वच्छता राखली जाते.
-                            </p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🍲</div>
+                            <div class="card-tri-title-en english-text">Dining &amp; Buffer Flow</div>
+                            <div class="card-tri-title-mr marathi-text">भोजन कक्ष व स्वच्छता</div>
+                            <div class="card-tri-desc english-text">Dual-counter buffet transitions and traditional Chauki zones preventing queues.</div>
+                            <div class="card-tri-desc marathi-text">रांगा न लागता स्वच्छता व आदराने भोजन वाढण्याची व्यवस्था.</div>
                         </div>
                     </div>
                 </div>
@@ -615,38 +456,11 @@
                     <h3 class="slide-title-mr marathi-text">पहिल्या पावलापासून राजेशाही आणि आदरयुक्त स्वागत</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="card-grid-4">
-                        <div class="feature-card">
-                            <span class="feature-icon">💐</span>
-                            <h4 class="feature-heading-en english-text">Traditional Ittar &amp; Gajra</h4>
-                            <h5 class="feature-heading-mr marathi-text">अत्तर आणि मोगरा गजरे</h5>
-                            <p class="feature-text english-text">Fragrant mogra gajras for ladies and ittar application in silver thalis set an elevated sensory tone.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">चांदीच्या तबकातून सुगंधी अत्तर आणि महिलांसाठी ताजे मोगऱ्याचे गजरे देऊन राजेशाही स्वागत.</p>
-                        </div>
-
-                        <div class="feature-card">
-                            <span class="feature-icon">👴</span>
-                            <h4 class="feature-heading-en english-text">Dedicated Elder Escort</h4>
-                            <h5 class="feature-heading-mr marathi-text">ज्येष्ठांची विशेष काळजी</h5>
-                            <p class="feature-text english-text">Trained Sunflower hosts assist senior family members with seating, water, and effortless movement.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">घरातील ज्येष्ठ व्यक्तींना जागेवर बसवणे, पाण्याची सोय आणि आपुलकीने विचारपूस करण्याची जबाबदारी.</p>
-                        </div>
-
-                        <div class="feature-card">
-                            <span class="feature-icon">🌸</span>
-                            <h4 class="feature-heading-en english-text">Flower Petal Showers</h4>
-                            <h5 class="feature-heading-mr marathi-text">पुष्पवृष्टी व अक्षता वाटप</h5>
-                            <p class="feature-text english-text">Silver trays of rose petals and akshata pre-distributed to all guests prior to key ritual climaxes.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">मंगलाष्टके आणि मुख्य मुहूर्ताच्या आधीच सर्व पाहुण्यांपर्यंत अक्षता व गुलाबाच्या पाकळ्यांचे वाटप.</p>
-                        </div>
-
-                        <div class="feature-card">
-                            <span class="feature-icon">🎁</span>
-                            <h4 class="feature-heading-en english-text">Rukhwat &amp; Gift Curation</h4>
-                            <h5 class="feature-heading-mr marathi-text">रुखवत व सन्मानपूर्वक भेट</h5>
-                            <p class="feature-text english-text">Artistically arranged cultural displays and personalized return gifts presented with heartfelt respect.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">पारंपरिक रुखवताची देखणी मांडणी आणि पाहुण्यांना निरोपाच्या वेळी सन्मानपूर्वक रिटर्न गिफ्ट्स.</p>
-                        </div>
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px;">
+                        <div class="card-tri-box"><div class="card-tri-icon">💐</div><div class="card-tri-title-en">Ittar &amp; Gajra</div><div class="card-tri-title-mr">अत्तर व मोगरा गजरे</div><div class="card-tri-desc">Fragrant mogra gajras and ittar in silver thalis.</div></div>
+                        <div class="card-tri-box"><div class="card-tri-icon">👴</div><div class="card-tri-title-en">Elder Escort</div><div class="card-tri-title-mr">ज्येष्ठांची काळजी</div><div class="card-tri-desc">Personal assistance for senior family members.</div></div>
+                        <div class="card-tri-box"><div class="card-tri-icon">🌸</div><div class="card-tri-title-en">Petal Showers</div><div class="card-tri-title-mr">पुष्पवृष्टी व अक्षता</div><div class="card-tri-desc">Rose petals and akshata distributed in advance.</div></div>
+                        <div class="card-tri-box"><div class="card-tri-icon">🎁</div><div class="card-tri-title-en">Rukhwat &amp; Gifts</div><div class="card-tri-title-mr">रुखवत व सन्मान भेट</div><div class="card-tri-desc">Artistic traditional displays &amp; return gifts.</div></div>
                     </div>
                 </div>
                 <div class="slide-footer">
@@ -655,7 +469,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 11: STAGE & PRODUCTION -->
+            <!-- SLIDE 11: STAGE & ACOUSTICS -->
             <section class="slide" data-slide="11">
                 <div class="slide-header">
                     <div class="slide-tag-row">
@@ -666,37 +480,21 @@
                     <h3 class="slide-title-mr marathi-text">प्रसन्न, सुश्राव्य आणि देखणी रंगमंच निर्मिती</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="bilingual-split">
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">🎤</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Vocal Clarity &amp; Live Sugam Sangeet</h4>
-                                    <h5 class="feature-heading-mr marathi-text">सुगम संगीत व सुस्पष्ट मंत्रोच्चार</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                We eliminate the blare of typical public speakers. Dedicated microphone arrays for Vedic priests ensure crisp spiritual resonance, accompanied by authentic live harmonium, tabla, and traditional Marathi vocalists.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                कर्कश आवाजाऐवजी प्रसन्न ध्वनिव्यवस्था! भटजींच्या मंत्रोच्चारांचे सुस्पष्ट ऑडिओ आणि त्यासोबत हार्मोनियम, तबला व सुगम संगीताची देखणी मैफल पाहुण्यांना मंत्रमुग्ध करते.
-                            </p>
+                    <div class="cards-dual-grid">
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🎤</div>
+                            <div class="card-tri-title-en english-text">Vocal Clarity &amp; Live Sugam Sangeet</div>
+                            <div class="card-tri-title-mr marathi-text">सुगम संगीत व सुस्पष्ट मंत्रोच्चार</div>
+                            <div class="card-tri-desc english-text">No speaker blare. Dedicated mics for Vedic priests accompanied by live harmonium, tabla, and vocalists.</div>
+                            <div class="card-tri-desc marathi-text">मंत्रोच्चारांचे सुस्पष्ट ऑडिओ आणि सुगम संगीत मैफिलीची प्रसन्न साथ.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <div class="feature-icon-title">
-                                <span class="feature-icon">💡</span>
-                                <div>
-                                    <h4 class="feature-heading-en english-text">Theatrical Warmth &amp; Lighting</h4>
-                                    <h5 class="feature-heading-mr marathi-text">उबदार प्रकाशयोजना व फोटो अनुकूलता</h5>
-                                </div>
-                            </div>
-                            <p class="feature-text english-text">
-                                Tuned warm amber spotlights highlight sacred golden ornaments and Paithani fabrics without glare, allowing professional videographers and family smartphone cameras to capture stunning photos.
-                            </p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">
-                                पारंपरिक दागिने, भरजरी पैठणी आणि फुलांची शोभा खुलून दिसावी यासाठी डोळ्यांना न टोचता उत्तम फोटोग्राफीसाठी अनुकूल अशी उबदार प्रकाशयोजना.
-                            </p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">💡</div>
+                            <div class="card-tri-title-en english-text">Warm Theatrical Lighting</div>
+                            <div class="card-tri-title-mr marathi-text">उबदार प्रकाशयोजना व फोटोग्राफी</div>
+                            <div class="card-tri-desc english-text">Amber spotlights tuned to highlight Paithani silks and golden ornaments without camera glare.</div>
+                            <div class="card-tri-desc marathi-text">उत्कृष्ट छायाचित्रणासाठी डोळ्यांना न टोचणारी उबदार प्रकाशयोजना.</div>
                         </div>
                     </div>
                 </div>
@@ -717,29 +515,29 @@
                     <h3 class="slide-title-mr marathi-text">सर्व टीम्सचे एका सूत्रात शिस्तबद्ध संचालन</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="card-grid-3">
-                        <div class="feature-card">
-                            <span class="feature-icon">👔</span>
-                            <h4 class="feature-heading-en english-text">Branded Floor Coordinators</h4>
-                            <h5 class="feature-heading-mr marathi-text">गणवेशधारी प्रशिक्षित समन्वयक</h5>
-                            <p class="feature-text english-text">Sunflower Events team members wear formal traditional attire and engraved brand lapel badges, acting as identifiable helpers for guests.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">सनफ्लॉवरचे समन्वयक पारंपरिक पोशाख आणि बॅजेससह हजर राहून पाहुण्यांना त्वरित मदत करतात.</p>
+                    <div class="cards-tri-grid">
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">👔</div>
+                            <div class="card-tri-title-en english-text">Branded Coordinators</div>
+                            <div class="card-tri-title-mr marathi-text">प्रशिक्षित समन्वयक</div>
+                            <div class="card-tri-desc english-text">Coordinators wearing traditional attire &amp; engraved brooches ready to assist guests.</div>
+                            <div class="card-tri-desc marathi-text">पारंपरिक पोशाख व बॅजेससह तत्पर मदतनीस.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">🤝</span>
-                            <h4 class="feature-heading-en english-text">Single Vendor Chain</h4>
-                            <h5 class="feature-heading-mr marathi-text">एकेरी नियंत्रण प्रणाली</h5>
-                            <p class="feature-text english-text">Florists, caterers, priests, musicians, and cleaners report exclusively to our Floor Lead. The host family never has to mediate disputes.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">सजावटकार, केटरर्स आणि तंत्रज्ञ थेट आमच्या समन्वयकाला रिपोर्ट करतात, ज्यामुळे यजमानांना मनस्ताप होत नाही.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🤝</div>
+                            <div class="card-tri-title-en english-text">Single Vendor Chain</div>
+                            <div class="card-tri-title-mr marathi-text">एकेरी नियंत्रण प्रणाली</div>
+                            <div class="card-tri-desc english-text">Florists, caterers, priests, and sound crews report exclusively to our Floor Lead.</div>
+                            <div class="card-tri-desc marathi-text">सर्व व्हेंडर्स आमच्या समन्वयकाला रिपोर्ट करतात.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">🧭</span>
-                            <h4 class="feature-heading-en english-text">Founder On-Ground Leadership</h4>
-                            <h5 class="feature-heading-mr marathi-text">संस्थापकांचे प्रत्यक्ष मार्गदर्शन</h5>
-                            <p class="feature-text english-text">Founder Sayali Sahasrabudhe personally oversees operations on-site, ensuring high standards of hospitality and ritual execution.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">संस्थापक सायली सहस्रबुद्धे स्वतः कार्यक्रमाच्या ठिकाणी उपस्थित राहून प्रत्येक व्यवस्थेवर बारकाईने लक्ष ठेवतात.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🧭</div>
+                            <div class="card-tri-title-en english-text">Founder On-Ground</div>
+                            <div class="card-tri-title-mr marathi-text">संस्थापकांचे थेट मार्गदर्शन</div>
+                            <div class="card-tri-desc english-text">Sayali Sahasrabudhe personally oversees every critical milestone on site.</div>
+                            <div class="card-tri-desc marathi-text">सायली सहस्रबुद्धे स्वतः सोहळ्याच्या ठिकाणी हजर.</div>
                         </div>
                     </div>
                 </div>
@@ -760,31 +558,21 @@
                     <h3 class="slide-title-mr marathi-text">शांत, जलद आणि पारदर्शक संवाद यंत्रणा</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="bilingual-split">
-                        <div class="feature-card">
-                            <span class="lang-indicator">Pre-Event Alignment</span>
-                            <h4 style="color: var(--color-gold); font-size: 1.05rem; margin-bottom: 8px;" class="english-text">
-                                Weekly Milestones &amp; Family Briefings
-                            </h4>
-                            <p class="english-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--color-text-secondary);">
-                                Structured WhatsApp groups and digital checklists keep the host family updated on invitation printing, venue clearances, ritual samagri procurement, and catering menus.
-                            </p>
-                            <p class="marathi-text" style="font-size: 0.85rem; line-height: 1.6; color: var(--color-text-secondary); margin-top: 10px; font-family: var(--font-mr-body);">
-                                कार्यक्रमाच्या आधी डिजिटल चेकलिस्ट आणि कौटुंबिक ग्रुप्सच्या माध्यमातून निमंत्रण पत्रिका, जागेची पूर्वतयारी आणि भोजन मेन्यूचे वेळेवर अपडेट्स दिले जातात.
-                            </p>
+                    <div class="cards-dual-grid">
+                        <div class="card-tri-box">
+                            <div style="font-size: 0.72rem; color: var(--color-gold); font-weight: 700;">PRE-EVENT ALIGNMENT</div>
+                            <div style="font-size: 0.95rem; font-weight: 800; color: #fff;">Weekly Milestones &amp; Broadcasts</div>
+                            <div style="margin-top: 6px; font-size: 0.75rem; color: var(--color-text-secondary); line-height: 1.5;">
+                                Digital checklists keep the family updated on invitations, venue clearances, and ritual samagri procurement weeks before the date.
+                            </div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="lang-indicator">Event-Day Channels</span>
-                            <h4 style="color: var(--color-gold); font-size: 1.05rem; margin-bottom: 8px;" class="english-text">
-                                Silent Radio &amp; Whisper Coordination
-                            </h4>
-                            <p class="english-text" style="font-size: 0.9rem; line-height: 1.5; color: var(--color-text-secondary);">
-                                Our team operates on discreet wireless frequencies to coordinate priest cues, food replenishment, and guest welcomes without shouting or creating visible panic.
-                            </p>
-                            <p class="marathi-text" style="font-size: 0.85rem; line-height: 1.6; color: var(--color-text-secondary); margin-top: 10px; font-family: var(--font-mr-body);">
-                                प्रत्यक्ष सोहळ्यात कर्मचाऱ्यांचा शांत, वायरलेस संवाद असतो. त्यामुळे कसलाही गोंधळ किंवा आरडाओरड न होता सर्व विधी आणि भोजन व्यवस्था शांततेत पार पडते.
-                            </p>
+                        <div class="card-tri-box">
+                            <div style="font-size: 0.72rem; color: var(--color-gold); font-weight: 700;">EVENT-DAY CHANNELS</div>
+                            <div style="font-size: 0.95rem; font-weight: 800; color: #fff;">Silent Radio Coordination</div>
+                            <div style="margin-top: 6px; font-size: 0.75rem; color: var(--color-text-secondary); line-height: 1.5; font-family: var(--font-mr-body);">
+                                कर्मचाऱ्यांचा शांत वायरलेस संवाद! कोणत्याही आरडाओरडीशिवाय सर्व विधी आणि भोजन व्यवस्था वेळेवर पार पडते.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -794,7 +582,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 14: SAFETY & RISK MITIGATION -->
+            <!-- SLIDE 14: SAFETY & GOVERNANCE -->
             <section class="slide" data-slide="14">
                 <div class="slide-header">
                     <div class="slide-tag-row">
@@ -805,29 +593,29 @@
                     <h3 class="slide-title-mr marathi-text">व्यावसायिक सुरक्षा आणि आपत्कालीन सज्जता</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="card-grid-3">
-                        <div class="feature-card">
-                            <span class="feature-icon">🩹</span>
-                            <h4 class="feature-heading-en english-text">First-Aid &amp; Medical Ready</h4>
-                            <h5 class="feature-heading-mr marathi-text">प्रथमोपचार व वैद्यकीय सुविधा</h5>
-                            <p class="feature-text english-text">Trained team members on standby with first-aid essentials, hydration stations, and emergency vehicle contacts for immediate assistance.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">प्रथमोपचार पेटी, ज्येष्ठ नागरिकांसाठी पाण्याची सोय आणि आपत्कालीन वैद्यकीय सज्जता २४ तास उपलब्ध.</p>
+                    <div class="cards-tri-grid">
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🩹</div>
+                            <div class="card-tri-title-en english-text">Medical &amp; First-Aid</div>
+                            <div class="card-tri-title-mr marathi-text">प्रथमोपचार सज्जता</div>
+                            <div class="card-tri-desc english-text">First-aid essentials and emergency contacts active on standby for senior citizens.</div>
+                            <div class="card-tri-desc marathi-text">प्रथमोपचार व वैद्यकीय खबरदारी २४ तास उपलब्ध.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">🔥</span>
-                            <h4 class="feature-heading-en english-text">Sacred Flame Buffer Zones</h4>
-                            <h5 class="feature-heading-mr marathi-text">होमकुंड परिसरातील सुरक्षित अंतर</h5>
-                            <p class="feature-text english-text">Controlled spatial margins around the Vedic havan fire to protect silk sarees, fabrics, and children while preserving ritual sanctity.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">होमकुंडाच्या अग्नीपासून भरजरी रेशमी कपडे आणि लहान मुलांचे रक्षण करण्यासाठी योग्य अंतर व खबरदारी.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🔥</div>
+                            <div class="card-tri-title-en english-text">Sacred Flame Buffer</div>
+                            <div class="card-tri-title-mr marathi-text">होमकुंड सुरक्षित अंतर</div>
+                            <div class="card-tri-desc english-text">Spatial margins around the sacred fire protecting silk fabrics and children.</div>
+                            <div class="card-tri-desc marathi-text">अग्नीपासून रेशमी कपडे व लहान मुलांची सुरक्षा.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">⚡</span>
-                            <h4 class="feature-heading-en english-text">Power &amp; Audio Redundancy</h4>
-                            <h5 class="feature-heading-mr marathi-text">जनरेटर व ऑडिओ बॅकअप</h5>
-                            <p class="feature-text english-text">Dual generator switchovers and backup wireless audio systems ensure the ceremony continues smoothly during any power fluctuations.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">वीज गेली तरी त्वरित जनरेटर सुरू होण्याची व्यवस्था आणि बॅकअप साऊंड सिस्टिमची सज्जता.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">⚡</div>
+                            <div class="card-tri-title-en english-text">Power Redundancy</div>
+                            <div class="card-tri-title-mr marathi-text">जनरेटर बॅकअप</div>
+                            <div class="card-tri-desc english-text">Dual generator switchovers ensuring sound and lighting never flicker.</div>
+                            <div class="card-tri-desc marathi-text">विद्युत खंडित न होण्याची पूर्ण खबरदारी.</div>
                         </div>
                     </div>
                 </div>
@@ -848,55 +636,50 @@
                     <h3 class="slide-title-mr marathi-text">सूक्ष्म ते स्थूल: भव्यतेचे रहस्य बारकाव्यांमध्येच असते!</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="micro-showcase-grid">
-                        <div class="micro-card">
-                            <span class="micro-badge">Authentic Element 1</span>
-                            <h4 class="micro-title-en english-text">Custom Illustrated Antarpat</h4>
-                            <h5 class="micro-title-mr marathi-text">सानुकूल सचित्र अंतरपाट</h5>
-                            <p class="micro-detail english-text">Hand-illustrated panels explaining ritual steps: <em>Keshavapan, Matribhojan, Gayatri Mantra, Samidha Daan</em>.</p>
-                            <p class="micro-detail marathi-text" style="font-family: var(--font-mr-body);">व्रतबंधाचे विधी समजावून सांगणारा ६ आकर्षक चित्रांचा खास तयार केलेला सचित्र अंतरपाट.</p>
+                    <div class="micro-strip-5">
+                        <div class="micro-item-box">
+                            <div class="micro-icon-disc">📜</div>
+                            <div class="micro-title-en">Illustrated Antarpat</div>
+                            <div class="micro-title-mr">सचित्र अंतरपाट</div>
+                            <div class="micro-text">6 hand-illustrated panels explaining ritual steps.</div>
                         </div>
 
-                        <div class="micro-card">
-                            <span class="micro-badge">Authentic Element 2</span>
-                            <h4 class="micro-title-en english-text">Khan / Paithani Border Plates</h4>
-                            <h5 class="micro-title-mr marathi-text">खान/पैठणी किनारीची भोजन ताटे</h5>
-                            <p class="micro-detail english-text">Banana leaves set with Paithani borders embroidered with <em>“॥ अन्न हे पूर्णब्रह्म ॥”</em> and sacred chants.</p>
-                            <p class="micro-detail marathi-text" style="font-family: var(--font-mr-body);">केळीच्या पानावर पैठणीची किनारी आणि <em>“॥ वदनी कवळ घेता ॥”</em> श्लोकाची भरतकाम केलेली सजावट.</p>
+                        <div class="micro-item-box">
+                            <div class="micro-icon-disc">🍽️</div>
+                            <div class="micro-title-en">Khan / Paithani Plates</div>
+                            <div class="micro-title-mr">खान-पैठणी भोजन ताटे</div>
+                            <div class="micro-text">Banana leaves embroidered with <em>“॥ अन्न हे पूर्णब्रह्म ॥”</em>.</div>
                         </div>
 
-                        <div class="micro-card">
-                            <span class="micro-badge">Authentic Element 3</span>
-                            <h4 class="micro-title-en english-text">Vedic Blessing Placards</h4>
-                            <h5 class="micro-title-mr marathi-text">पारंपरिक आशीर्वाद फलक</h5>
-                            <p class="micro-detail english-text">Held by family members: <em>“॥ शतायू भव ॥”, “॥ यशवंत हो ॥”, “॥ कीर्तिवंत हो ॥”, “॥ कुलवंत हो ॥”</em>.</p>
-                            <p class="micro-detail marathi-text" style="font-family: var(--font-mr-body);">बटूच्या आगमनावेळी नातेवाईकांच्या हाती धरलेले मंगल आशीर्वादांचे लाकडी सुंदर फलक.</p>
+                        <div class="micro-item-box">
+                            <div class="micro-icon-disc">🪧</div>
+                            <div class="micro-title-en">Blessing Placards</div>
+                            <div class="micro-title-mr">आशीर्वाद फलक</div>
+                            <div class="micro-text">Handheld boards: <em>“॥ शतायू भव ॥”, “॥ यशवंत हो ॥”</em>.</div>
                         </div>
 
-                        <div class="micro-card">
-                            <span class="micro-badge">Authentic Element 4</span>
-                            <h4 class="micro-title-en english-text">Engraved Wooden Brooches</h4>
-                            <h5 class="micro-title-mr marathi-text">लाकडी कोरीव बॅजेस</h5>
-                            <p class="micro-detail english-text">Bespoke wooden lapel pins proudly worn by the host family as distinguished celebration keepsakes.</p>
-                            <p class="micro-detail marathi-text" style="font-family: var(--font-mr-body);">यजमान कुटुंबाने परिधान केलेले सनफ्लॉवरचे नक्षीदार लाकडी ब्रॉच व स्मरणिका.</p>
+                        <div class="micro-item-box">
+                            <div class="micro-icon-disc">🌻</div>
+                            <div class="micro-title-en">Engraved Brooches</div>
+                            <div class="micro-title-mr">लाकडी कोरीव ब्रॉच</div>
+                            <div class="micro-text">Bespoke wooden keepsake pins worn by hosts.</div>
                         </div>
 
-                        <div class="micro-card">
-                            <span class="micro-badge">Authentic Element 5</span>
-                            <h4 class="micro-title-en english-text">Bespoke Petal Carpets</h4>
-                            <h5 class="micro-title-mr marathi-text">फुलांचा सुंदर गालिचा</h5>
-                            <p class="micro-detail english-text">Thousands of fresh mogra, marigold, and rose petals handcrafted into geometric procession paths.</p>
-                            <p class="micro-detail marathi-text" style="font-family: var(--font-mr-body);">भिक्षावळीसाठी मोगरा, झेंडू व गुलाबाच्या ताज्या पाकळ्यांचा साकारलेला आकर्षक पायघडी मार्ग.</p>
+                        <div class="micro-item-box">
+                            <div class="micro-icon-disc">🌸</div>
+                            <div class="micro-title-en">Petal Carpets</div>
+                            <div class="micro-title-mr">फुलांची पायघडी</div>
+                            <div class="micro-text">Geometric fresh jasmine &amp; rose petal carpets.</div>
                         </div>
                     </div>
                 </div>
                 <div class="slide-footer">
                     <span class="footer-brand">SUNFLOWER EVENTS LLP</span>
-                    <span class="footer-quote">Verified Empirical Elements from Real Events</span>
+                    <span class="footer-quote">Verified Empirical Elements from Real Celebrations</span>
                 </div>
             </section>
 
-            <!-- SLIDE 16: EVENT-DAY COMMAND CENTER -->
+            <!-- SLIDE 16: COMMAND CENTER -->
             <section class="slide" data-slide="16">
                 <div class="slide-header">
                     <div class="slide-tag-row">
@@ -907,43 +690,13 @@
                     <h3 class="slide-title-mr marathi-text">सोहळ्याच्या दिवशीचे वॉर-रूम मॉडेल</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="journey-track">
-                        <div class="journey-step">
-                            <div class="step-number">P</div>
-                            <div class="step-title-en">Plan</div>
-                            <div class="step-title-mr">नियोजन</div>
-                            <div class="step-desc">Morning site takeover, acoustic check &amp; samagri audit.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">M</div>
-                            <div class="step-title-en">Monitor</div>
-                            <div class="step-title-mr">निरीक्षण</div>
-                            <div class="step-desc">Tracking guest arrivals, kitchen pacing &amp; hall temperature.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">C</div>
-                            <div class="step-title-en">Coordinate</div>
-                            <div class="step-title-mr">समन्वय</div>
-                            <div class="step-desc">Synchronizing priests, musicians &amp; photographer timings.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">R</div>
-                            <div class="step-title-en">Respond</div>
-                            <div class="step-title-mr">सज्जता</div>
-                            <div class="step-desc">Instant calm resolution of unannounced guest requests.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">E</div>
-                            <div class="step-title-en">Execute</div>
-                            <div class="step-title-mr">अंमलबजावणी</div>
-                            <div class="step-desc">Auspicious muhurat hit with precision and beauty.</div>
-                        </div>
-                        <div class="journey-step">
-                            <div class="step-number">D</div>
-                            <div class="step-title-en">Deliver</div>
-                            <div class="step-title-mr">पूर्तता</div>
-                            <div class="step-desc">Deep host satisfaction and unforgettable memories.</div>
-                        </div>
+                    <div class="process-pipeline" style="grid-template-columns: repeat(6, 1fr);">
+                        <div class="pipeline-node"><div class="pipeline-badge">P</div><div class="pipeline-title-en">Plan</div><div class="pipeline-title-mr">नियोजन</div><div class="pipeline-desc">Site takeover &amp; audio check.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">M</div><div class="pipeline-title-en">Monitor</div><div class="pipeline-title-mr">निरीक्षण</div><div class="pipeline-desc">Guest arrivals &amp; kitchen flow.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">C</div><div class="pipeline-title-en">Coord</div><div class="pipeline-title-mr">समन्वय</div><div class="pipeline-desc">Priest &amp; musician sync.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">R</div><div class="pipeline-title-en">Respond</div><div class="pipeline-title-mr">सज्जता</div><div class="pipeline-desc">Instant calm resolutions.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">E</div><div class="pipeline-title-en">Execute</div><div class="pipeline-title-mr">पूर्तता</div><div class="pipeline-desc">Muhurat hit with precision.</div></div>
+                        <div class="pipeline-node"><div class="pipeline-badge">D</div><div class="pipeline-title-en">Delight</div><div class="pipeline-title-mr">समाधान</div><div class="pipeline-desc">अविस्मरणीय कौटुंबिक क्षण.</div></div>
                     </div>
                 </div>
                 <div class="slide-footer">
@@ -952,41 +705,33 @@
                 </div>
             </section>
 
-            <!-- SLIDE 17: TECHNOLOGY & AI -->
+            <!-- SLIDE 17: TECHNOLOGY & MODERN OPERATIONS -->
             <section class="slide" data-slide="17">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Innovation • तंत्रज्ञान व कार्यपद्धती</span>
+                        <span class="category-pill">Innovation • आधुनिक कार्यपद्धती</span>
                         <span class="slide-counter-small">17 / 25</span>
                     </div>
                     <h2 class="slide-title-en english-text">Technology &amp; Modern Operations</h2>
-                    <h3 class="slide-title-mr marathi-text">प्राचीन संस्कृती आणि आधुनिक तंत्रज्ञानाचा सुवर्णमध्य</h3>
+                    <h3 class="slide-title-mr marathi-text">संस्कृती आणि आधुनिक तंत्रज्ञानाचा सुवर्णमध्य</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="bilingual-split">
-                        <div class="feature-card" style="border-top: 4px solid var(--color-emerald);">
-                            <span class="lang-indicator">Current Proven Capabilities</span>
-                            <h4 style="color: var(--color-emerald-light); font-size: 1.1rem; margin-bottom: 8px;">
-                                Tested On-Ground Operations
-                            </h4>
-                            <ul style="margin-left: 18px; font-size: 0.85rem; line-height: 1.7; color: var(--color-text-body);">
-                                <li><strong>Cloud Run-Sheets:</strong> Real-time shared schedules with vendors.</li>
-                                <li><strong>Remote Video Planning:</strong> Seamless consultations for NRI clients across 3,000+ km.</li>
-                                <li><strong>Precision Sound Engineering:</strong> Multi-mic setups for mantras and musical instruments.</li>
-                                <li><strong>Vendor Databases:</strong> Pre-screened network of trusted suppliers.</li>
+                    <div class="cards-dual-grid">
+                        <div class="card-tri-box" style="border-left: 3px solid var(--color-olive-bright);">
+                            <div style="font-size: 0.72rem; color: var(--color-olive-bright); font-weight: 700;">CURRENT PROVEN CAPABILITIES</div>
+                            <ul style="margin-left: 18px; font-size: 0.75rem; color: #fff; line-height: 1.6;">
+                                <li><strong>Cloud Run-Sheets:</strong> Real-time synchronized schedules.</li>
+                                <li><strong>Remote Video Planning:</strong> Consultations for NRI clients (3000+ km).</li>
+                                <li><strong>Acoustic Engineering:</strong> Multi-mic setups for mantras &amp; instruments.</li>
                             </ul>
                         </div>
 
-                        <div class="feature-card" style="border-top: 4px solid var(--color-gold);">
-                            <span class="lang-indicator">Future AI Possibilities</span>
-                            <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: 8px;">
-                                Forward-Looking Innovations
-                            </h4>
-                            <ul style="margin-left: 18px; font-size: 0.85rem; line-height: 1.7; color: var(--color-text-body);">
-                                <li><strong>QR Guest Reception:</strong> Instant contactless check-in with personalized welcome alerts.</li>
-                                <li><strong>AI Photo Segregation:</strong> Automated facial recognition sending family photos instantly.</li>
-                                <li><strong>Intelligent Seating Optimization:</strong> Smart hall layout based on guest dietary preferences.</li>
-                                <li><strong>Digital Keepsake Portals:</strong> Interactive family memories archived online.</li>
+                        <div class="card-tri-box" style="border-left: 3px solid var(--color-gold);">
+                            <div style="font-size: 0.72rem; color: var(--color-gold); font-weight: 700;">FUTURE POSSIBILITIES</div>
+                            <ul style="margin-left: 18px; font-size: 0.75rem; color: var(--color-text-secondary); line-height: 1.6;">
+                                <li><strong>QR Reception:</strong> Contactless check-in &amp; personalized messages.</li>
+                                <li><strong>AI Photo Segregation:</strong> Facial recognition for family photos.</li>
+                                <li><strong>Intelligent Seating:</strong> Seating layouts based on dietary choices.</li>
                             </ul>
                         </div>
                     </div>
@@ -997,46 +742,30 @@
                 </div>
             </section>
 
-            <!-- SLIDE 18: OUR OPERATING MODEL -->
+            <!-- SLIDE 18: OPERATING MODEL -->
             <section class="slide" data-slide="18">
                 <div class="slide-header">
                     <div class="slide-tag-row">
                         <span class="category-pill">Architecture • कार्यप्रणाली मॉडेल</span>
                         <span class="slide-counter-small">18 / 25</span>
                     </div>
-                    <h2 class="slide-title-en english-text">Single-Point Accountability Model</h2>
+                    <h2 class="slide-title-en english-text">Single-Point Accountability Architecture</h2>
                     <h3 class="slide-title-mr marathi-text">एकेरी उत्तरदायित्व कार्यप्रणाली (सिंगल पॉइंट कॉन्टॅक्ट)</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="statement-box" style="padding: 28px 36px;">
-                        <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center;">
-                            <div style="background: var(--color-gold); color: #061510; font-weight: 800; padding: 10px 24px; border-radius: var(--radius-pill); font-size: 1rem;">
-                                THE HOST FAMILY (यजमान कुटुंब)
-                            </div>
-                            <div style="color: var(--color-gold); font-size: 1.5rem;">▼</div>
-                            <div style="background: rgba(16, 185, 129, 0.2); border: 2px solid var(--color-emerald); color: #ffffff; font-weight: 800; padding: 12px 30px; border-radius: var(--radius-pill); font-size: 1.1rem;">
-                                SUNFLOWER EVENTS (LEAD STRATEGIST: SAYALI SAHASRABUDHE)
-                            </div>
-                            <div style="color: var(--color-gold); font-size: 1.5rem;">▼</div>
-                            <div class="card-grid-4" style="width: 100%;">
-                                <div style="background: rgba(255,255,255,0.06); padding: 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600;">
-                                    Rituals &amp; Vedic Priests
-                                </div>
-                                <div style="background: rgba(255,255,255,0.06); padding: 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600;">
-                                    Stage, Audio &amp; Decor
-                                </div>
-                                <div style="background: rgba(255,255,255,0.06); padding: 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600;">
-                                    Hospitality &amp; Guest Care
-                                </div>
-                                <div style="background: rgba(255,255,255,0.06); padding: 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600;">
-                                    Banqueting &amp; Dining
-                                </div>
-                            </div>
-                            <div style="color: var(--color-gold); font-size: 1.5rem;">▼</div>
-                            <div style="background: rgba(245, 166, 35, 0.2); border: 1px solid var(--color-gold); color: var(--color-gold-bright); font-weight: 700; padding: 8px 20px; border-radius: var(--radius-pill); font-size: 0.95rem;">
-                                FLAWLESS, STRESS-FREE CELEBRATION (अविस्मरणीय आणि शांत सोहळा)
-                            </div>
+                    <div class="command-tree">
+                        <div class="tree-node-top">THE HOST FAMILY (यजमान कुटुंब)</div>
+                        <div class="tree-arrow">▼</div>
+                        <div class="tree-node-core">SUNFLOWER EVENTS (LEAD STRATEGIST: SAYALI SAHASRABUDHE)</div>
+                        <div class="tree-arrow">▼</div>
+                        <div class="tree-row-branches">
+                            <div class="tree-branch-card">Rituals &amp; Vedic Priests<br><span style="color: var(--color-gold);">वैदिक विधी</span></div>
+                            <div class="tree-branch-card">Stage, Audio &amp; Decor<br><span style="color: var(--color-gold);">स्टेज व सजावट</span></div>
+                            <div class="tree-branch-card">Hospitality &amp; Guest Care<br><span style="color: var(--color-gold);">अतिथी सत्कार</span></div>
+                            <div class="tree-branch-card">Banqueting &amp; Dining<br><span style="color: var(--color-gold);">भोजन व्यवस्था</span></div>
                         </div>
+                        <div class="tree-arrow">▼</div>
+                        <div class="tree-node-bottom">FLAWLESS, STRESS-FREE CELEBRATION (आनंदाचे आणि समाधानाचे क्षण)</div>
                     </div>
                 </div>
                 <div class="slide-footer">
@@ -1056,29 +785,25 @@
                     <h3 class="slide-title-mr marathi-text">चि. तनय व्रतबंध सोहळा: ३,००० किमी अंतरावरून रिमोट नियोजन</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="case-study-layout">
-                        <div class="case-study-info">
-                            <span class="case-meta-pill">🌍 Overseas NRI Family • 3,000 km Remote Coordination</span>
-                            <div class="bilingual-card">
-                                <h4 style="color: var(--color-gold); font-size: 1rem; margin-bottom: 6px;" class="english-text">The Challenge &amp; Strategy</h4>
-                                <p class="english-text" style="font-size: 0.86rem; line-height: 1.5; color: var(--color-text-secondary);">
-                                    The host family lived 3,000 km away in the United States. Without them needing to travel back and forth, Sunflower Events curated venue logistics, customized traditional Rukhwat, live portrait rangoli, and coordinated with priests seamlessly.
-                                </p>
-                                <p class="marathi-text" style="font-size: 0.82rem; line-height: 1.55; color: var(--color-text-secondary); margin-top: 6px; font-family: var(--font-mr-body);">
-                                    अमेरिकेत स्थायिक असलेल्या कुटुंबाचा सोहळा! ३००० किमी अंतरावरून प्रत्येक तपशील व्हिडिओ कॉल्सद्वारे निश्चित करून प्रत्यक्ष जागेवर परिपूर्ण विधी, सानुकूल रुखवत आणि भव्य रांगोळीसह देखणा सोहळा संपन्न झाला.
-                                </p>
-                            </div>
-                            <div class="case-quote-box">
-                                “It was wonderfully managed, very well organized. I kind of liked the decor, and how each one of you was actually involved in meeting people, talking to them, and taking their feedback. I will definitely recommend you!”
-                                <div class="case-quote-author">— Prabhat (Family Host, Peach Kurta)</div>
+                    <div class="case-dossier-grid">
+                        <div class="case-dossier-card">
+                            <div style="font-size: 0.72rem; color: var(--color-olive-bright); font-weight: 700;">🌍 OVERSEAS NRI FAMILY • 3,000 KM AWAY</div>
+                            <p class="english-text" style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.45;">
+                                Planned for an overseas family from the United States. Sunflower Events managed venue logistics, bespoke Rukhwat, live rangoli, and samagri without the family needing to travel prior to the event week.
+                            </p>
+                            <p class="marathi-text" style="font-size: 0.78rem; color: var(--color-text-secondary); line-height: 1.45; font-family: var(--font-mr-body);">
+                                अमेरिकेतील कुटुंबासाठी ३,००० किमी अंतरावरून पारदर्शक नियोजन! सानुकूल रुखवत व रांगोळीसह प्रत्येक क्षण देखणा ठरला.
+                            </p>
+                            <div class="case-quote-banner">
+                                “It was wonderfully managed, very well organized. I kind of liked the decor and how each one of you was involved. I will definitely recommend Sunflower Events!”
+                                <div class="case-author-lbl">— Prabhat (Family Host)</div>
                             </div>
                         </div>
-                        <div class="case-media-preview-card" data-video-src="assets/sunflower-events-case-study-tanay-munj-remote-planning-3000km.mp4" data-video-title="Chi. Tanay's Upanayan Reel — Planned 3000 km Away">
-                            <video src="assets/sunflower-events-case-study-tanay-munj-remote-planning-3000km.mp4" muted preload="metadata"></video>
-                            <div class="play-action-overlay">
-                                <div class="play-circle-btn">▶</div>
-                                <span class="play-label">Watch Event Reel (3000 km Away)</span>
-                            </div>
+
+                        <div class="case-interactive-trigger" onclick="window.sunflowerPresentation.openVideoModal('assets/sunflower-events-case-study-tanay-munj-remote-planning-3000km.mp4', 'Chi. Tanay Upanayan Film — Planned 3000 km Away')">
+                            <div class="play-ring-btn">▶</div>
+                            <div style="font-size: 0.92rem; font-weight: 800; color: #fff;">Play Video Case Study Film</div>
+                            <div style="font-size: 0.72rem; color: var(--color-gold);">Click to Watch Verified Event Reel (3000 km Away)</div>
                         </div>
                     </div>
                 </div>
@@ -1099,29 +824,25 @@
                     <h3 class="slide-title-mr marathi-text">माधव बँक्वेट्समधील संगीत सोहळा आणि थेट रांगोळी</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="case-study-layout">
-                        <div class="case-study-info">
-                            <span class="case-meta-pill">🎵 Live Sugam Sangeet • Floral Umbrella Entry • Madhav Banquets</span>
-                            <div class="bilingual-card">
-                                <h4 style="color: var(--color-gold); font-size: 1rem; margin-bottom: 6px;" class="english-text">Cultural Elegance &amp; Music</h4>
-                                <p class="english-text" style="font-size: 0.86rem; line-height: 1.5; color: var(--color-text-secondary);">
-                                    Executed at Madhav Banquets featuring a traditional live Sugam Sangeet vocal and harmonium ensemble, floor portrait rangoli, and grand entry under a fresh floral umbrella.
-                                </p>
-                                <p class="marathi-text" style="font-size: 0.82rem; line-height: 1.55; color: var(--color-text-secondary); margin-top: 6px; font-family: var(--font-mr-body);">
-                                    माधव बँक्वेट्स येथे आयोजित सोहळ्यात लाईव्ह सुगम संगीत मैफल, बटूची देखणी रांगोळी आणि फुलांच्या छत्रीखाली झालेली शाही एन्ट्री यामुळे संपूर्ण सभागृह भारावून गेले.
-                                </p>
-                            </div>
-                            <div class="case-quote-box">
-                                “मी आज आत एंटर केलं आणि सायली व सनफ्लॉवर इव्हेंट्सचं मॅनेजमेंट इतकं भावलो... रांगोळी, रुखवत, गाण्यांचे सिलेक्शन आणि ओव्हरऑल मॅनेजमेंट खूपच सुरेख व आटोपशीर आहे. मला स्वतःला जाऊन त्यांचे कौतुक करावे वाटले!”
-                                <div class="case-quote-author">— Sheetal Joshi (Advay’s Grandmother / आजी)</div>
+                    <div class="case-dossier-grid">
+                        <div class="case-dossier-card">
+                            <div style="font-size: 0.72rem; color: var(--color-olive-bright); font-weight: 700;">🎵 LIVE SUGAM SANGEET • MADHAV BANQUETS</div>
+                            <p class="english-text" style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.45;">
+                                Executed at Madhav Banquets featuring a traditional live Sugam Sangeet orchestra (vocalists, harmonium, tabla), live floor portrait rangoli, and grand entry under a fresh floral umbrella.
+                            </p>
+                            <p class="marathi-text" style="font-size: 0.78rem; color: var(--color-text-secondary); line-height: 1.45; font-family: var(--font-mr-body);">
+                                माधव बँक्वेट्स येथे थेट रांगोळी, सुगम संगीत मैफल आणि फुलांच्या छत्रीखाली शाही प्रवेशामुळे सोहळ्यातील प्रत्येक क्षण भावला.
+                            </p>
+                            <div class="case-quote-banner">
+                                “मी आज आत एंटर केलं आणि सायली व सनफ्लॉवर इव्हेंट्सचं मॅनेजमेंट इतकं भावलो... रांगोळी, रुखवत, गाण्यांचे सिलेक्शन खूपच सुरेख व आटोपशीर आहे!”
+                                <div class="case-author-lbl">— Sheetal Joshi (Advay’s Grandmother / आजी)</div>
                             </div>
                         </div>
-                        <div class="case-media-preview-card" data-video-src="assets/sunflower-events-case-study-advay-munj-madhav-banquets-live-music-decor.mp4" data-video-title="Chi. Advay's Munj at Madhav Banquets">
-                            <video src="assets/sunflower-events-case-study-advay-munj-madhav-banquets-live-music-decor.mp4" muted preload="metadata"></video>
-                            <div class="play-action-overlay">
-                                <div class="play-circle-btn">▶</div>
-                                <span class="play-label">Watch Madhav Banquets Video</span>
-                            </div>
+
+                        <div class="case-interactive-trigger" onclick="window.sunflowerPresentation.openVideoModal('assets/sunflower-events-case-study-advay-munj-madhav-banquets-live-music-decor.mp4', 'Chi. Advay Soirée at Madhav Banquets')">
+                            <div class="play-ring-btn">▶</div>
+                            <div style="font-size: 0.92rem; font-weight: 800; color: #fff;">Play Madhav Banquets Film</div>
+                            <div style="font-size: 0.72rem; color: var(--color-gold);">Click to Watch Live Sugam Sangeet &amp; Decor Reel</div>
                         </div>
                     </div>
                 </div>
@@ -1142,29 +863,25 @@
                     <h3 class="slide-title-mr marathi-text">चि. आरिन वझे व्रतबंध सोहळा — २३ ऑगस्ट २०२४</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="case-study-layout">
-                        <div class="case-study-info">
-                            <span class="case-meta-pill">🪔 Illustrated Antarpat • Palkhi Entry • Blessing Boards</span>
-                            <div class="bilingual-card">
-                                <h4 style="color: var(--color-gold); font-size: 1rem; margin-bottom: 6px;" class="english-text">Micro-Innovation in Vedic Rituals</h4>
-                                <p class="english-text" style="font-size: 0.86rem; line-height: 1.5; color: var(--color-text-secondary);">
-                                    An iconic benchmark celebration featuring a custom 6-panel educational Antarpat, royal marigold Palkhi entry, 9 blessing placards, easel artboards explaining Matribhojan, and Paithani dining setup.
-                                </p>
-                                <p class="marathi-text" style="font-size: 0.82rem; line-height: 1.55; color: var(--color-text-secondary); margin-top: 6px; font-family: var(--font-mr-body);">
-                                    २३ ऑगस्ट २०२४ चा अविस्मरणीय सोहळा! ६ विधी चित्रे असणारा खास अंतरपाट, फुलांनी सजवलेली पालखी, ९ मंगल आशीर्वाद फलक आणि मातृभोजनाचे कलात्मक फलक यामुळे प्रत्येक पाहुण्याने मनापासून कौतुक केले.
-                                </p>
-                            </div>
-                            <div class="case-quote-box">
+                    <div class="case-dossier-grid">
+                        <div class="case-dossier-card">
+                            <div style="font-size: 0.72rem; color: var(--color-olive-bright); font-weight: 700;">🪔 ILLUSTRATED ANTARPAT • PALKHI ENTRY</div>
+                            <p class="english-text" style="font-size: 0.8rem; color: var(--color-text-secondary); line-height: 1.45;">
+                                A benchmark ceremony featuring a custom 6-panel educational Antarpat, royal marigold Palkhi entry, 9 sacred blessing placards, and easel artboards explaining Matribhojan.
+                            </p>
+                            <p class="marathi-text" style="font-size: 0.78rem; color: var(--color-text-secondary); line-height: 1.45; font-family: var(--font-mr-body);">
+                                २३ ऑगस्ट २०२४ चा ऐतिहासिक सोहळा! सचित्र अंतरपाट, फुलांची पालखी आणि ९ मंगल आशीर्वाद फलकांमुळे मांगल्याचे क्षण साकारले.
+                            </p>
+                            <div class="case-quote-banner">
                                 “॥ शतायू भव ॥ • ॥ शक्तिमान भव ॥ • ॥ यशवंत हो ॥ • ॥ नीतिवंत हो ॥ • ॥ कीर्तिवंत हो ॥”
-                                <div class="case-quote-author">— Sacred Blessing Boards Held by Family Relatives</div>
+                                <div class="case-author-lbl">— Sacred Blessing Placards</div>
                             </div>
                         </div>
-                        <div class="case-media-preview-card" data-video-src="assets/sunflower-events-case-study-aarin-vaze-bratabandha-custom-antarpat-palkhi.mp4" data-video-title="Chi. Aarin Vaze's Bratabandha (23 Aug 2024)">
-                            <video src="assets/sunflower-events-case-study-aarin-vaze-bratabandha-custom-antarpat-palkhi.mp4" muted preload="metadata"></video>
-                            <div class="play-action-overlay">
-                                <div class="play-circle-btn">▶</div>
-                                <span class="play-label">Watch Aarin Vaze Video Reel</span>
-                            </div>
+
+                        <div class="case-interactive-trigger" onclick="window.sunflowerPresentation.openVideoModal('assets/sunflower-events-case-study-aarin-vaze-bratabandha-custom-antarpat-palkhi.mp4', 'Chi. Aarin Vaze Ceremony Reel')">
+                            <div class="play-ring-btn">▶</div>
+                            <div style="font-size: 0.92rem; font-weight: 800; color: #fff;">Play Aarin Vaze Film</div>
+                            <div style="font-size: 0.72rem; color: var(--color-gold);">Click to Watch Custom Antarpat &amp; Palkhi Reel</div>
                         </div>
                     </div>
                 </div>
@@ -1178,52 +895,48 @@
             <section class="slide" data-slide="22">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Track Record • अनुभव आणि क्षमता</span>
+                        <span class="category-pill">Track Record • अनुभव आणि आकडेवारी</span>
                         <span class="slide-counter-small">22 / 25</span>
                     </div>
-                    <h2 class="slide-title-en english-text">Our Scale &amp; Capabilities</h2>
+                    <h2 class="slide-title-en english-text">Our Proven Scale &amp; Capabilities</h2>
                     <h3 class="slide-title-mr marathi-text">विश्वास आणि सातत्य सिद्ध करणारी आकडेवारी</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="metric-highlights-row" style="grid-template-columns: repeat(4, 1fr);">
-                        <div class="metric-highlight-card">
-                            <div class="metric-big-num animate-counter" data-target="18" data-suffix="+">18+</div>
-                            <div class="metric-label-en">Years Leadership</div>
-                            <div class="metric-label-mr">वर्षे व्यवस्थापन अनुभव</div>
+                    <div class="metrics-quad">
+                        <div class="metric-stat-box">
+                            <div class="metric-stat-num animate-counter" data-target="18" data-suffix="+">18+</div>
+                            <div class="metric-stat-title-en">Years Leadership</div>
+                            <div class="metric-stat-title-mr">वर्षे व्यवसाय नेतृत्व</div>
                         </div>
-                        <div class="metric-highlight-card">
-                            <div class="metric-big-num animate-counter" data-target="50" data-suffix="+">50+</div>
-                            <div class="metric-label-en">Executed Events</div>
-                            <div class="metric-label-mr">यशस्वी सोहळे</div>
+                        <div class="metric-stat-box">
+                            <div class="metric-stat-num animate-counter" data-target="50" data-suffix="+">50+</div>
+                            <div class="metric-stat-title-en">Events Executed</div>
+                            <div class="metric-stat-title-mr">यशस्वी सोहळे</div>
                         </div>
-                        <div class="metric-highlight-card">
-                            <div class="metric-big-num animate-counter" data-target="100" data-suffix="%">100%</div>
-                            <div class="metric-label-en">Turnkey Coordination</div>
-                            <div class="metric-label-mr">इन-हाउस नियंत्रण</div>
+                        <div class="metric-stat-box">
+                            <div class="metric-stat-num animate-counter" data-target="100" data-suffix="%">100%</div>
+                            <div class="metric-stat-title-en">Turnkey In-House</div>
+                            <div class="metric-stat-title-mr">संपूर्ण जबाबदारी</div>
                         </div>
-                        <div class="metric-highlight-card">
-                            <div class="metric-big-num animate-counter" data-target="3000" data-suffix="+">3000+</div>
-                            <div class="metric-label-en">km Remote Planning</div>
-                            <div class="metric-label-mr">किमी रिमोट समन्वय</div>
+                        <div class="metric-stat-box">
+                            <div class="metric-stat-num animate-counter" data-target="3000" data-suffix="+">3000+</div>
+                            <div class="metric-stat-title-en">km Remote Planning</div>
+                            <div class="metric-stat-title-mr">किमी रिमोट समन्वय</div>
                         </div>
                     </div>
 
-                    <div class="bilingual-split" style="margin-top: 20px;">
-                        <div class="bilingual-card">
-                            <h4 style="color: var(--color-gold); font-size: 0.95rem; margin-bottom: 6px;" class="english-text">
-                                Broad Spectrum of Celebrations Managed
-                            </h4>
-                            <p class="english-text" style="font-size: 0.85rem; line-height: 1.5; color: var(--color-text-secondary);">
-                                Complete Wedding Coordination • Traditional Ceremonies (Upanayan, Baby Shower, Vastushanti) • Milestone Birthdays &amp; Anniversaries • Corporate Conferences &amp; Team Offsites • NRI &amp; Remote Client Celebrations.
-                            </p>
+                    <div class="cards-dual-grid" style="margin-top: 14px;">
+                        <div class="card-tri-box">
+                            <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-gold);">CELEBRATION PORTFOLIOS</div>
+                            <div style="font-size: 0.74rem; color: var(--color-text-secondary); line-height: 1.45;">
+                                Complete Wedding Coordination • Traditional Ceremonies (Upanayan, Baby Shower) • Milestone Birthdays (50th, 60th, 75th) • Corporate Summits.
+                            </div>
                         </div>
-                        <div class="bilingual-card">
-                            <h4 style="color: var(--color-gold); font-size: 0.95rem; margin-bottom: 6px;" class="marathi-text">
-                                सर्व प्रकारच्या सोहळ्यांचे परिपूर्ण नियोजन
-                            </h4>
-                            <p class="marathi-text" style="font-size: 0.82rem; line-height: 1.55; color: var(--color-text-secondary); font-family: var(--font-mr-body);">
-                                विवाह सोहळे • मुंज/व्रतबंध, डोहाळजेवण व वास्तुशांती • ५०वे, ६०वे व ७५वे अभीष्टचिंतन सोहळे • कॉर्पोरेट परिषद व ब्रँड इव्हेंट्स • परदेशस्थ भारतीयांचे (NRI) सोहळे.
-                            </p>
+                        <div class="card-tri-box">
+                            <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-gold);">सर्व सोहळ्यांचे परिपूर्ण नियोजन</div>
+                            <div style="font-size: 0.74rem; color: var(--color-text-secondary); line-height: 1.45; font-family: var(--font-mr-body);">
+                                विवाह सोहळे, व्रतबंध/मुंज, अभीष्टचिंतन आणि कॉर्पोरेट कॉन्फरन्स — सोहळ्यातील प्रत्येक क्षण परिपूर्ण आणि सुंदर!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1233,7 +946,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 23: THE SUNFLOWER DIFFERENCE -->
+            <!-- SLIDE 23: COMPARISON MATRIX -->
             <section class="slide" data-slide="23">
                 <div class="slide-header">
                     <div class="slide-tag-row">
@@ -1244,45 +957,45 @@
                     <h3 class="slide-title-mr marathi-text">पारंपरिक आयोजक विरुद्ध सनफ्लॉवर स्ट्रॅटेजिक पार्टनर</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="comparison-table-wrapper">
-                        <table class="comparison-table">
+                    <div class="matrix-container">
+                        <table class="matrix-table">
                             <thead>
                                 <tr>
                                     <th>Dimension / घटक</th>
                                     <th>Traditional Event Organizers</th>
-                                    <th class="col-sunflower">SUNFLOWER EVENTS LLP</th>
+                                    <th class="col-highlight">SUNFLOWER EVENTS LLP</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td><strong>Operating Role</strong></td>
-                                    <td>Middleman booking separate vendors</td>
-                                    <td class="col-sunflower">Strategic Event Planner &amp; Execution Partner</td>
+                                    <td>Fragmented vendor aggregator</td>
+                                    <td class="col-highlight">Strategic Event Planner &amp; Execution Partner</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Accountability</strong></td>
-                                    <td>Fragmented; family chases multiple contractors</td>
-                                    <td class="col-sunflower">Single Point of 100% Turnkey Ownership</td>
+                                    <td>Family chases multiple contractors</td>
+                                    <td class="col-highlight">Single Point of 100% Turnkey Ownership</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Cultural Depth</strong></td>
-                                    <td>Generic decor; misses authentic ritual nuances</td>
-                                    <td class="col-sunflower">Deep mastery of Vedic rituals, shlokas &amp; samagri</td>
+                                    <td>Generic decor; misses ritual nuances</td>
+                                    <td class="col-highlight">Deep mastery of Vedic rituals, shlokas &amp; samagri</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Micro-Details</strong></td>
                                     <td>Standard off-the-shelf items</td>
-                                    <td class="col-sunflower">Bespoke illustrated Antarpat, Khan plates, blessing boards</td>
+                                    <td class="col-highlight">Bespoke Antarpat, Khan dining, blessing boards</td>
                                 </tr>
                                 <tr>
                                     <td><strong>On-Ground Presence</strong></td>
                                     <td>Junior supervisors on event day</td>
-                                    <td class="col-sunflower">Founder Sayali Sahasrabudhe personally orchestrates</td>
+                                    <td class="col-highlight">Founder Sayali Sahasrabudhe personally orchestrates</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Host Experience</strong></td>
-                                    <td>Exhaustion, anxiety, coordination fatigue</td>
-                                    <td class="col-sunflower">Complete peace of mind; host feels like an honored guest</td>
+                                    <td>Exhaustion and anxiety</td>
+                                    <td class="col-highlight">Peace of mind; host enjoys every sacred moment (क्षण)</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1298,54 +1011,48 @@
             <section class="slide" data-slide="24">
                 <div class="slide-header">
                     <div class="slide-tag-row">
-                        <span class="category-pill">Client Value • ग्राहकांना काय मिळते?</span>
+                        <span class="category-pill">Value • ग्राहकांना मिळणारे लाभ</span>
                         <span class="slide-counter-small">24 / 25</span>
                     </div>
                     <h2 class="slide-title-en english-text">What Clients Truly Gain</h2>
-                    <h3 class="slide-title-mr marathi-text">सनफ्लॉवर इव्हेंट्समुळे मिळणारा खरा लाभ</h3>
+                    <h3 class="slide-title-mr marathi-text">सनफ्लॉवर इव्हेंट्समुळे मिळणारे खरे समाधान</h3>
                 </div>
                 <div class="slide-content">
-                    <div class="card-grid-3">
-                        <div class="feature-card">
-                            <span class="feature-icon">🕊️</span>
-                            <h4 class="feature-heading-en english-text">Zero Stress (तणावमुक्ती)</h4>
-                            <p class="feature-text english-text">Immerse yourself in laughter, rituals, and your loved ones without handling back-end operations.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">कोणतीही धावपळ न करता स्वतःच्या कुटुंबासोबत आनंदाचे क्षण अनुभवा.</p>
+                    <div class="cards-tri-grid">
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🕊️</div>
+                            <div class="card-tri-title-en">Zero Stress (तणावमुक्ती)</div>
+                            <div class="card-tri-desc">Enjoy every celebratory moment with your family without operational worries.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">🎯</span>
-                            <h4 class="feature-heading-en english-text">Total Control (परिपूर्ण नियंत्रण)</h4>
-                            <p class="feature-text english-text">Transparent timelines, verified checklist milestones, and zero hidden costs.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">पारदर्शक हिशोब, निश्चित वेळापत्रक आणि कोणत्याही छुप्या खर्चाशिवाय काम.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🎯</div>
+                            <div class="card-tri-title-en">Total Control (परिपूर्ण नियंत्रण)</div>
+                            <div class="card-tri-desc">Transparent timelines, fixed milestones, and zero hidden costs.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">🪔</span>
-                            <h4 class="feature-heading-en english-text">Cultural Pride (संस्कृतीचा अभिमान)</h4>
-                            <p class="feature-text english-text">Ancient Vedic rituals celebrated with correct shlokas, dignity, and visual beauty.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">वैदिक मंत्रोच्चार आणि परंपरांचे पावित्र्य राखत संपन्न होणारा सोहळा.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">🪔</div>
+                            <div class="card-tri-title-en">Cultural Pride (संस्कृतीचा आदर)</div>
+                            <div class="card-tri-desc">Vedic rituals executed with authentic shlokas, dignity, and beauty.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">👑</span>
-                            <h4 class="feature-heading-en english-text">Royal Hospitality (आदरातिथ्य)</h4>
-                            <p class="feature-text english-text">Every arriving guest feels honored, pampered with ittar, and warmly escorted.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">पाहुण्यांचे अत्तर, मोगऱ्याचे गजरे आणि आपुलकीने होणारे राजेशाही स्वागत.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">👑</div>
+                            <div class="card-tri-title-en">Royal Hospitality (आदरातिथ्य)</div>
+                            <div class="card-tri-desc">Guests welcomed with fragrant mogra, ittar, and personalized escorting.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">💎</span>
-                            <h4 class="feature-heading-en english-text">Bespoke Distinction (वेगळेपण)</h4>
-                            <p class="feature-text english-text">Illustrated Antarpat, Khan-bordered dining, and handcrafted elements created just for you.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">इतरांपेक्षा वेगळे दिसणारे सचित्र अंतरपाट आणि खान-किनारीची भोजन मांडणी.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">💎</div>
+                            <div class="card-tri-title-en">Bespoke Distinction (वेगळेपण)</div>
+                            <div class="card-tri-desc">Custom Antarpat and Khan plates crafted exclusively for your family.</div>
                         </div>
 
-                        <div class="feature-card">
-                            <span class="feature-icon">📸</span>
-                            <h4 class="feature-heading-en english-text">Lifelong Memories (अविस्मरणीय आठवणी)</h4>
-                            <p class="feature-text english-text">A celebration that relatives and friends remember and praise for years to come.</p>
-                            <p class="feature-text marathi-text" style="font-family: var(--font-mr-body);">वर्षानुवर्षे नातेवाईक व मित्रांच्या मनात आदराने टिकून राहणारा देखणा सोहळा.</p>
+                        <div class="card-tri-box">
+                            <div class="card-tri-icon">📸</div>
+                            <div class="card-tri-title-en">Lifelong Memories (अविस्मरणीय क्षण)</div>
+                            <div class="card-tri-desc">A milestone remembered and praised with warmth by relatives for decades.</div>
                         </div>
                     </div>
                 </div>
@@ -1355,7 +1062,7 @@
                 </div>
             </section>
 
-            <!-- SLIDE 25: CLOSING & INVITATION -->
+            <!-- SLIDE 25: CLOSING -->
             <section class="slide" data-slide="25">
                 <div class="slide-header">
                     <div class="slide-tag-row">
@@ -1364,63 +1071,49 @@
                     </div>
                 </div>
                 <div class="slide-content">
-                    <div class="closing-layout">
-                        <div class="closing-brand-statement">
-                            <h1 class="hero-main-title" style="font-size: 2.8rem;">
-                                SUNFLOWER <span class="hero-highlight">EVENTS</span>
+                    <div class="cards-dual-grid" style="align-items: center;">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <h1 style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: 800; color: #fff;">
+                                SUNFLOWER <span style="color: var(--color-gold);">EVENTS</span>
                             </h1>
-                            <div class="closing-motto-en english-text">
+                            <div class="english-text" style="font-size: 1.15rem; font-weight: 700; color: var(--color-gold);">
                                 “You celebrate, we make it unforgettable.”
                             </div>
-                            <div class="closing-motto-mr marathi-text">
-                                “सोहळा तुमचा, अविस्मरणीय करण्याची जबाबदारी आमची.”
+                            <div class="marathi-text" style="font-family: var(--font-mr-heading); font-size: 1rem; color: #fff;">
+                                “सोहळा तुमचा, अविस्मरणीय क्षण साकारण्याची जबाबदारी आमची!”
                             </div>
-                            <div style="font-size: 1.05rem; font-weight: 700; color: var(--color-gold-bright);">
+                            <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-olive-bright); margin-top: 4px;">
                                 Think Big. Plan Smart. Execute Flawlessly.
                             </div>
-                            <div style="font-size: 0.95rem; color: var(--color-text-secondary); font-family: var(--font-mr-body);">
+                            <div style="font-size: 0.78rem; color: var(--color-text-secondary); font-family: var(--font-mr-body);">
                                 मोठा विचार करा. अचूक नियोजन करा. परिपूर्ण सोहळा अनुभवा.
                             </div>
                         </div>
 
-                        <div class="contact-card-box">
-                            <h3 style="color: var(--color-text-title); font-size: 1.2rem; font-weight: 700; border-bottom: 1px solid var(--border-subtle); padding-bottom: 10px;">
-                                Get in Touch • थेट संपर्क साधा
-                            </h3>
-                            <div class="contact-row">
-                                <div class="contact-icon">👤</div>
-                                <div>
-                                    <strong>Sayali Sahasrabudhe</strong>
-                                    <div style="font-size: 0.78rem; color: var(--color-text-secondary);">Founder &amp; Event Strategist</div>
-                                </div>
+                        <!-- Masked Contact Card per Policy -->
+                        <div class="card-tri-box" style="border: 1.5px solid var(--border-glow); padding: 18px; gap: 10px;">
+                            <div style="font-size: 0.82rem; font-weight: 800; color: #fff; border-bottom: 1px solid var(--border-subtle); padding-bottom: 6px;">
+                                Connect with Sunflower Events
                             </div>
-                            <div class="contact-row">
-                                <div class="contact-icon">📞</div>
-                                <div>
-                                    <a href="tel:+919920431983" style="color: var(--color-gold); text-decoration: none; font-weight: 700;">+91 99204 31983</a>
-                                    <div style="font-size: 0.78rem; color: var(--color-text-secondary);">Direct Line / WhatsApp Call</div>
-                                </div>
+                            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.82rem;">
+                                <span>👤</span>
+                                <div><strong>Sayali Sahasrabudhe</strong> (Founder &amp; Event Strategist)</div>
                             </div>
-                            <div class="contact-row">
-                                <div class="contact-icon">✉️</div>
-                                <div>
-                                    <a href="mailto:contactsunflowerevents@gmail.com" style="color: var(--color-text-body); text-decoration: none;">contactsunflowerevents@gmail.com</a>
-                                    <div style="font-size: 0.78rem; color: var(--color-text-secondary);">Official Email Communication</div>
-                                </div>
+                            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.82rem;">
+                                <span>📞</span>
+                                <div><strong style="color: var(--color-gold);">+91 99204 •••••</strong> (Direct Phone / WhatsApp - Masked)</div>
                             </div>
-                            <div class="contact-row">
-                                <div class="contact-icon">📸</div>
-                                <div>
-                                    <span style="color: var(--color-text-body);">@sunflowerevents_in_mumbai</span>
-                                    <div style="font-size: 0.78rem; color: var(--color-text-secondary);">Instagram Official Portfolio</div>
-                                </div>
+                            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.82rem;">
+                                <span>✉️</span>
+                                <div><strong style="color: var(--color-text-secondary);">c********@sunflowerevents.com</strong> (Official Email)</div>
                             </div>
-                            <div class="contact-row">
-                                <div class="contact-icon">📍</div>
-                                <div>
-                                    <span style="color: var(--color-text-body);">Mumbai, Maharashtra</span>
-                                    <div style="font-size: 0.78rem; color: var(--color-text-secondary);">Serving Across Maharashtra &amp; Overseas / NRI Clients</div>
-                                </div>
+                            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.82rem;">
+                                <span>📸</span>
+                                <div><strong>@sunflowerevents_in_mumbai</strong> (Instagram Portfolio)</div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 10px; font-size: 0.82rem;">
+                                <span>📍</span>
+                                <div>Mumbai, Maharashtra • Serving Overseas &amp; Destination Clients</div>
                             </div>
                         </div>
                     </div>
@@ -1437,13 +1130,10 @@
     <!-- Bottom Navigation Bar & Progress Controls -->
     <footer class="bottom-nav-bar">
         <button class="nav-btn" id="prevBtn" title="Previous Slide (Press Left Arrow)">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-            <span class="btn-text">Previous</span>
+            <span>◀ Prev</span>
         </button>
 
-        <div class="progress-track" title="Click anywhere to jump to that slide">
+        <div class="progress-track" title="Click to jump to that slide">
             <div class="progress-fill" id="progressFill"></div>
         </div>
 
@@ -1452,56 +1142,39 @@
         </div>
 
         <button class="nav-btn" id="nextBtn" title="Next Slide (Press Right Arrow or Space)">
-            <span class="btn-text">Next</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
+            <span>Next ▶</span>
         </button>
     </footer>
 
-    <!-- Slide Overview Grid Modal (Triggered by 'O' or Grid Icon) -->
+    <!-- Slide Overview Grid Modal -->
     <div class="modal-overlay" id="gridModal">
         <div class="modal-box">
             <div class="modal-header">
-                <div class="modal-title">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="3" width="7" height="7"></rect>
-                        <rect x="14" y="14" width="7" height="7"></rect>
-                        <rect x="3" y="14" width="7" height="7"></rect>
-                    </svg>
-                    <span>Slide Overview • सर्व स्लाईड्स</span>
-                </div>
-                <button class="modal-close-btn" id="gridCloseBtn" title="Close">&times;</button>
+                <div class="modal-title">Slide Overview • सर्व स्लाईड्स</div>
+                <button class="modal-close-btn" id="gridCloseBtn">&times;</button>
             </div>
             <div class="modal-content-area">
-                <div class="slides-overview-grid" id="slidesOverviewGrid">
-                    <!-- Dynamically populated by presentation.js -->
-                </div>
+                <div class="slides-overview-grid" id="slidesOverviewGrid"></div>
             </div>
         </div>
     </div>
 
-    <!-- Case Study Video Player Modal -->
+    <!-- Video Modal Player -->
     <div class="modal-overlay" id="videoModal">
-        <div class="modal-box" style="max-width: 850px;">
+        <div class="modal-box" style="max-width: 800px;">
             <div class="modal-header">
-                <div class="modal-title" id="modalVideoTitle">
-                    Case Study Video Player
-                </div>
-                <button class="modal-close-btn" id="videoCloseBtn" title="Close">&times;</button>
+                <div class="modal-title" id="modalVideoTitle">Case Study Film</div>
+                <button class="modal-close-btn" id="videoCloseBtn">&times;</button>
             </div>
-            <div class="modal-content-area" style="padding: 16px; background: #000;">
+            <div class="modal-content-area" style="padding: 12px; background: #000;">
                 <div class="video-player-container">
-                    <video id="modalVideoPlayer" controls playsinline>
-                        Your browser does not support the video tag.
-                    </video>
+                    <video id="modalVideoPlayer" controls playsinline></video>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- Script -->
     <script src="presentation.js"></script>
 </body>
 </html>
