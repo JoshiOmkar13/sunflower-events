@@ -4,38 +4,19 @@
 param(
     [string]$HostName = "72.62.198.241",
     [string]$PublicHost = "sunflower-events.bjttvo.easypanel.host",
-    [string]$EnvFile = "E:\Clients\dg-online\.env.local",
+    [string]$IdentityFile = "$env:USERPROFILE\.ssh\dg_online_hostinger",
     [int]$DirectPort = 3086
 )
 
 $ErrorActionPreference = "Stop"
-$projectRoot = "E:\Clients\sunflower-events\presentation"
+$projectRoot = Join-Path (Resolve-Path (Join-Path $PSScriptRoot "..")).Path "presentation"
 
 Write-Host "`n=================================================================" -ForegroundColor Cyan
 Write-Host "  🌻 SUNFLOWER EVENTS LLP -- HOSTINGER VPS DEPLOYMENT PIPELINE" -ForegroundColor Yellow
 Write-Host "  Target VPS: root@$HostName (Port: $DirectPort | Domain: https://$PublicHost)" -ForegroundColor Cyan
 Write-Host "=================================================================`n" -ForegroundColor Cyan
 
-# 1. Load Hostinger VPS credentials
-if (-not (Test-Path $EnvFile)) {
-    throw "Hostinger configuration file $EnvFile not found."
-}
-
-$config = @{}
-Get-Content $EnvFile | ForEach-Object {
-    if ($_ -match "^\s*([^#=]+)=(.*)$") {
-        $config[$matches[1].Trim()] = $matches[2].Trim()
-    }
-}
-
-$sshUser = if ($config["HOSTINGER_SSH_USER"]) { $config["HOSTINGER_SSH_USER"] } else { "root" }
-$sshPass = $config["HOSTINGER_SSH_PASSWORD"]
-
-if (-not $sshPass) {
-    throw "HOSTINGER_SSH_PASSWORD not found in $EnvFile."
-}
-
-# 2. Create Release Archive
+# 1. Create Release Archive
 $release = (Get-Date).ToUniversalTime().ToString("yyyyMMddTHHmmssZ")
 $archive = Join-Path $env:TEMP "sunflower-events-$release.tar.gz"
 
@@ -48,42 +29,16 @@ try {
 }
 Write-Host "  [OK] Release archive created: $archive" -ForegroundColor Green
 
-# 3. Configure Non-Interactive SSH Authentication
-$askpass = Join-Path $env:TEMP "sunflower-ssh-askpass-$release.bat"
-Set-Content -LiteralPath $askpass -Value "@echo off`necho $sshPass" -Encoding Ascii
-$env:SSH_ASKPASS = $askpass
-$env:SSH_ASKPASS_REQUIRE = "force"
-$env:DISPLAY = "codex"
+# 2. Check Authentication Strategy (SSH Key vs Password)
+$useKey = Test-Path -LiteralPath $IdentityFile
 
-$sshOpts = @("-o", "StrictHostKeyChecking=accept-new", "-o", "PreferredAuthentications=password", "-o", "PubkeyAuthentication=no")
+if ($useKey) {
+    Write-Host "[2/4] Authenticating via SSH Key ($IdentityFile)..." -ForegroundColor Cyan
+    $sshOpts = @("-o", "StrictHostKeyChecking=accept-new", "-i", $IdentityFile)
+    $scpOpts = @("-o", "StrictHostKeyChecking=accept-new", "-i", $IdentityFile)
 
-try {
-    # 4. Stream Upload Release Archive to Hostinger VPS
-    Write-Host "`n[2/4] Uploading Release Archive to Hostinger VPS..." -ForegroundColor Cyan
-
-    $psi = New-Object System.Diagnostics.ProcessStartInfo
-    $psi.FileName = "ssh.exe"
-    $psi.Arguments = "-o StrictHostKeyChecking=accept-new -o PreferredAuthentications=password -o PubkeyAuthentication=no ${sshUser}@${HostName} `"cat > /tmp/sunflower-events-$release.tar.gz`""
-    $psi.UseShellExecute = $false
-    $psi.RedirectStandardInput = $true
-    $psi.RedirectStandardOutput = $true
-    $psi.RedirectStandardError = $true
-
-    $p = [System.Diagnostics.Process]::Start($psi)
-    $inStream = [System.IO.File]::OpenRead($archive)
-    $inStream.CopyTo($p.StandardInput.BaseStream)
-    $inStream.Close()
-    $p.StandardInput.Close()
-    $p.WaitForExit()
-
-    if ($p.ExitCode -ne 0) {
-        $err = $p.StandardError.ReadToEnd()
-        throw "Failed to stream upload release archive. ExitCode: $($p.ExitCode). Error: $err"
-    }
-    Write-Host "  [OK] Release archive uploaded successfully." -ForegroundColor Green
-
-    # 5. Remote Unpack, Build, and Swarm Service Deployment
-    Write-Host "`n[3/4] Building Docker Image and Orchestrating Swarm Service..." -ForegroundColor Cyan
+    Write-Host "`n[3/4] Uploading Release Archive & Deploying to Hostinger VPS..." -ForegroundColor Cyan
+    & scp @scpOpts $archive "root@${HostName}:/tmp/sunflower-events-$release.tar.gz"
 
     $remoteScript = @"
 set -eu
@@ -139,31 +94,31 @@ http:
 ROUTE
 
 echo "Waiting for service to stabilize..."
-sleep 5
+sleep 4
 docker service ps sunflower-events --format 'table {{.Name}}\t{{.CurrentState}}\t{{.Error}}'
 "@
 
     $routeHost = '`' + $PublicHost + '`'
     $remoteScript = $remoteScript.Replace('__PUBLIC_HOST__', $routeHost)
-    $remoteScript = $remoteScript.Replace('$DirectPort', $DirectPort.ToString())
 
-    $out = & ssh.exe @sshOpts "${sshUser}@${HostName}" $remoteScript
-    Write-Host $out -ForegroundColor Green
+    & ssh @sshOpts "root@$HostName" $remoteScript
 
-    # 6. Verify Health Endpoint
+    # Verify Health Endpoint
     Write-Host "`n[4/4] Auditing Production Health Endpoint on VPS..." -ForegroundColor Cyan
     $probeCmd = "curl -s -o /dev/null -w '%{http_code}' http://localhost:$DirectPort/ || echo 'WAIT'"
-    $httpStatus = & ssh.exe @sshOpts "${sshUser}@${HostName}" $probeCmd
+    $httpStatus = & ssh @sshOpts "root@$HostName" $probeCmd
     Write-Host "  HTTP Status Response on Port ${DirectPort}: $httpStatus" -ForegroundColor Green
 
     Write-Host "`n=================================================================" -ForegroundColor Cyan
     Write-Host "  🎉 DEPLOYMENT COMPLETE: Sunflower Events Presentation is Live!" -ForegroundColor Green
     Write-Host "=================================================================" -ForegroundColor Cyan
     Write-Host "  Public Domain (SSL): https://$PublicHost" -ForegroundColor Green
+    Write-Host "  Presentation Deck:   https://$PublicHost/deck.html" -ForegroundColor Green
+    Write-Host "  Client Website:      https://$PublicHost/index.html" -ForegroundColor Green
     Write-Host "  Direct VPS URL:      http://${HostName}:${DirectPort}/" -ForegroundColor White
     Write-Host "=================================================================`n" -ForegroundColor Cyan
-}
-finally {
+
     Remove-Item -LiteralPath $archive -Force -ErrorAction SilentlyContinue
-    Remove-Item -LiteralPath $askpass -Force -ErrorAction SilentlyContinue
+} else {
+    throw "SSH identity key not found at $IdentityFile. Deployment requires SSH key."
 }
